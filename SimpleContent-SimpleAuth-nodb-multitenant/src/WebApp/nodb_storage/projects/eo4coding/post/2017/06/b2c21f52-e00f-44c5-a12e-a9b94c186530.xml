@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-16"?>
+<post>
+  <title>Quick Post</title>
+  <slug>quick-post</slug>
+  <correlationkey></correlationkey>
+  <author>Eben Olivier</author>
+  <pubDate>2017-06-08T00:00:00.0000000Z</pubDate>
+  <lastModified>2017-06-09T03:17:01.8422027Z</lastModified>
+  <excerpt>psoting</excerpt>
+  <content>&lt;p&gt;Please leave comments if you like this post&lt;/p&gt;
+</content>
+  <ispublished>true</ispublished>
+  <categories>
+    <category>test</category>
+  </categories>
+  <comments>
+    <comment isAdmin="false" isApproved="false" id="62b3968a-3019-48cf-af57-7d824f9c41cc">
+      <author>Eben Olivier</author>
+      <email>oliviereben@gmail.com</email>
+      <website></website>
+      <ip>0.0.0.1</ip>
+      <userAgent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36</userAgent>
+      <date>2017-06-08T12:19:11.8459592+07:00</date>
+      <content>Hi hi it is friday</content>
+    </comment>
+    <comment isAdmin="false" isApproved="false" id="a3034e9d-0fb7-4bdc-a443-4c865d3c997e">
+      <author>Eben Olivier</author>
+      <email>oliviereben@gmail.com</email>
+      <website></website>
+      <ip>0.0.0.1</ip>
+      <userAgent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36</userAgent>
+      <date>2017-06-08T12:25:44.6808935+07:00</date>
+      <content>Test thies</content>
+    </comment>
+    <comment isAdmin="false" isApproved="false" id="820a5cce-388d-4a75-b2b7-fce3d058d72b">
+      <author>Eben Olivier</author>
+      <email>oliviereben@gmail.com</email>
+      <website></website>
+      <ip>0.0.0.1</ip>
+      <userAgent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36</userAgent>
+      <date>2017-06-08T12:38:59.3594308+07:00</date>
+      <content>test</content>
+    </comment>
+    <comment isAdmin="false" isApproved="false" id="e1c4fc90-1351-4947-89fa-c1ff4553b165">
+      <author>Eben Olivier</author>
+      <email>oliviereben@gmail.com</email>
+      <website></website>
+      <ip>0.0.0.1</ip>
+      <userAgent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36</userAgent>
+      <date>2017-06-08T12:41:05.4826347+07:00</date>
+      <content>dddfd</content>
+    </comment>
+    <comment isAdmin="false" isApproved="false" id="4f86f294-deeb-47db-ae7a-af9347c619d3">
+      <author>Eben</author>
+      <email>olviereben@gmail.com</email>
+      <website>http://myblog/</website>
+      <ip>0.0.0.1</ip>
+      <userAgent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36</userAgent>
+      <date>2017-06-09T07:36:56.0585135+07:00</date>
+      <content>Hello</content>
+    </comment>
+    <comment isAdmin="false" isApproved="false" id="4cd19729-57d3-4999-a552-f688d68f4a70">
+      <author>Eben Olivier</author>
+      <email>oliviereben@gmail.com</email>
+      <website></website>
+      <ip>0.0.0.1</ip>
+      <userAgent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36</userAgent>
+      <date>2017-06-09T03:17:01.8367003Z</date>
+      <content>ddd</content>
+    </comment>
+  </comments>
+</post>

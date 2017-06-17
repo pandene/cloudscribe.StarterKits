@@ -1,0 +1,15 @@
+﻿@model ContactViewModel
+@{
+    Layout = "_Layout4Email";
+}
+<div style="font: 11pt/1.5 calibri, arial;">
+    <br />
+    Name :<strong> @Model.Name</strong><br />
+    <br/>
+    @Model.Content  <br /><br />
+    <br /><br /><hr />
+    Website:<strong>  @Model.WebSite</strong> <br />
+    E-mail: <strong> @Model.Email </strong> <br />
+    IP-address:<strong> @Model.Ip<</strong><br/>
+    User Agent :<strong> @Model.UserAgent</strong>
+</div>

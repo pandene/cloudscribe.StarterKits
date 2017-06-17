@@ -28,9 +28,7 @@ namespace WebApp
 
             builder.AddJsonFile("app-tenants-users.json");
             builder.AddJsonFile("app-content-project-settings.json");
-            builder.AddJsonFile("eo4coding-app-tenants-users.json");
-            builder.AddJsonFile("eo4coding-app-content-project-settings.json");
-			// this file name is ignored by gitignore
+            // this file name is ignored by gitignore
             // so you can create it and use on your local dev machine
             // remember last config source added wins if it has the same settings
             builder.AddJsonFile("appsettings.dev.json", optional: true, reloadOnChange: true);

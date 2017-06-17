@@ -262,3 +262,5 @@ cloudscribe-core-nodb/src/WebApp/nodb_storage/**
 **/userlocation/**
 
 **/nodb_storage/projects/**/userlocation/**
+
+logs/
