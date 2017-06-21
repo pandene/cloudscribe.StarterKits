@@ -2,10 +2,10 @@
 <post>
   <title>My Test Blog</title>
   <slug>my-test-blog</slug>
-  <correlationkey></correlationkey>
+  <correlationkey />
   <author>Bilbo Baggins</author>
-  <pubDate>2017-04-26T04:00:00.0000000Z</pubDate>
-  <lastModified>2017-05-26T04:35:25.1650285Z</lastModified>
+  <pubDate>2017-04-15T04:00:00.0000000</pubDate>
+  <lastModified>2017-06-07T16:31:39.0742250Z</lastModified>
   <excerpt>test</excerpt>
   <content>&lt;p&gt;WildCoast, Transkei. Places to go and what to expect. Off the beaten track Luphathana and&amp;nbsp;Msikaba&lt;/p&gt;
 
@@ -102,7 +102,10 @@
 &lt;p&gt;Google&lt;/p&gt;
 </content>
   <ispublished>true</ispublished>
-  <categories></categories>
+  <categories>
+    <category>wild coast</category>
+    <category>travel</category>
+  </categories>
   <comments>
     <comment isAdmin="true" isApproved="true" id="b433e473-39e8-4230-bcb2-cef05a3f36bf">
       <author>Eben</author>
@@ -110,7 +113,7 @@
       <website>http://myblog/</website>
       <ip>0.0.0.1</ip>
       <userAgent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36</userAgent>
-      <date>2017-05-26T04:35:25.1579964Z</date>
+      <date>2017-05-26T06:35:25.1579964+02:00</date>
       <content>Test</content>
     </comment>
   </comments>

@@ -1,15 +1,18 @@
-﻿@model ContactViewModel
+﻿@using WebApp.Models
+@model ContactViewModel
 
 @{
-    ViewData["Title"] = "Contact";
+    ViewData["Title"] = "Contact Eben Olivier";
 }
 
 <h1>Contact Eben Olivier</h1>
+<p><img alt="" src="~/media/images/20170522_181140-ws.jpg" style="height:309px; width:550px" /></p>
+
+<p>Having fun and work where ever I go, feel free to contact me. Just bear in mind I sometimes need to finish my beer before I reply</p>
 
 
 <form id="contactform" role="form" asp-antiforgery="true" class="form-horizontal" data-contact-path="AjaxPostContact">
     <fieldset>
-        <legend>Contact me</legend>
         <div class="form-group row">
             <label for="contactname" class="control-label col-sm-2">Name</label>
             <div class="col-sm-7">
@@ -38,7 +41,7 @@
             <div class="form-group">
                 <div class="col-md-offset-2 col-md-10">
                     <div class="g-recaptcha" data-sitekey="@Model.ProjectSettings.RecaptchaPublicKey"></div>
-                    @Html.ValidationMessage("recaptchaerror", new { @class = "text-danger" })
+                    @Html.ValidationMessage("recaptchaerror", new { @class = "text-danger" }) 
                 </div>
             </div>
             

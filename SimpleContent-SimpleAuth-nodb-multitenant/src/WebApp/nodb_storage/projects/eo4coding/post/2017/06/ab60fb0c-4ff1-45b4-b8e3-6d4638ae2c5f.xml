@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-16"?>
+<post>
+  <title>Multi tenancy .net core</title>
+  <slug>multi-tenancy-net-core</slug>
+  <correlationkey />
+  <author>Eben Olivier</author>
+  <pubDate>2017-06-01T08:31:00.0000000</pubDate>
+  <lastModified>2017-06-01T08:58:47.1684317Z</lastModified>
+  <excerpt>Starting with Multi Tenancy asp.net core,  getting to know the basics</excerpt>
+  <content>&lt;p&gt;So my idea I&amp;#39;ve have been playing with is to have one site which I can use for different things I am busy with right now, the fist been development which hasa always been a passion but somehow got neglected over the years been a dad and more invlolved with management.&lt;/p&gt;
+
+&lt;p&gt;But now things has changed, no more management but still full time dad and traveller. This has open up some time to get back in the development side of things and my first priority is to get started on blogging about development I have been busy with and new ideas such as miltitenanc which is exactly what I&amp;#39;ve planned since I have multiple unrelated sites, one for travelling and one for techinical and development.&lt;/p&gt;
+
+&lt;p&gt;Starting with idea I came across a couple of concepts, such as dot net blog engine which I had a quick look at, but decided that is not really what I want. Only&amp;nbsp;after starting to look at implementing &amp;nbsp;themes and multiple sites did I came accross a blog done by &lt;a href="http://benfoster.io/"&gt;Ben foster&lt;/a&gt; about &lt;a href="http://benfoster.io/blog/saaskit-multi-tenancy-made-easy"&gt;Introducing SaasKit - Multi-tenancy made easy&lt;/a&gt;. This was exactly what I was looking for and although the posts are 2 years old and some of the information doesn&amp;#39;t relate exactly back to the code anymore which told me this is still active work and&amp;nbsp;a good thing.&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+</content>
+  <ispublished>false</ispublished>
+  <categories></categories>
+  <comments></comments>
+</post>
