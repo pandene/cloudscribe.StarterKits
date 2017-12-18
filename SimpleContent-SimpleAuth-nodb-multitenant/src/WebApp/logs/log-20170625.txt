@@ -1,0 +1,32 @@
+2017-06-25 12:51:48.325 +08:00 [Information] [Microsoft.Extensions.DependencyInjection.DataProtectionServices] [] User profile is available. Using '"C:\Users\ebeno\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2017-06-25 12:51:48.456 +08:00 [Debug] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 3 }] Hosting starting
+2017-06-25 12:51:48.708 +08:00 [Debug] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 4 }] Hosting started
+2017-06-25 12:51:48.832 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 1 }] Connection id ""0HL5RGNHO97QT"" started.
+2017-06-25 12:51:48.832 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 1 }] Connection id ""0HL5RGNHO97QU"" started.
+2017-06-25 12:51:48.949 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 1 }] Request starting HTTP/1.1 DEBUG http://localhost:52472/  0
+2017-06-25 12:51:48.949 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 1 }] Request starting HTTP/1.1 GET http://localhost:52472/  
+2017-06-25 12:51:49.104 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 9 }] Connection id ""0HL5RGNHO97QU"" completed keep alive response.
+2017-06-25 12:51:49.114 +08:00 [Debug] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 4 }] The request path "/" does not match a supported file type
+2017-06-25 12:51:49.114 +08:00 [Debug] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 3 }] The request path "" does not match the path filter
+2017-06-25 12:51:49.115 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 2 }] Request finished in 186.6638ms 200 
+2017-06-25 12:51:49.165 +08:00 [Debug] [Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository] [{ Id: 37 }] Reading data from file '"C:\Users\ebeno\AppData\Local\ASP.NET\DataProtection-Keys\key-2de46559-992f-4ac7-a51d-24731a60b0b9.xml"'.
+2017-06-25 12:51:49.172 +08:00 [Debug] [Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository] [{ Id: 37 }] Reading data from file '"C:\Users\ebeno\AppData\Local\ASP.NET\DataProtection-Keys\key-bf08f74b-ab40-452b-907b-ab53ec09f8b6.xml"'.
+2017-06-25 12:51:49.180 +08:00 [Debug] [Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager] [{ Id: 18 }] Found key {2de46559-992f-4ac7-a51d-24731a60b0b9}.
+2017-06-25 12:51:49.185 +08:00 [Debug] [Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager] [{ Id: 18 }] Found key {bf08f74b-ab40-452b-907b-ab53ec09f8b6}.
+2017-06-25 12:51:49.198 +08:00 [Debug] [Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver] [{ Id: 13 }] Considering key {2de46559-992f-4ac7-a51d-24731a60b0b9} with expiration date 2017-07-25 11:05:16Z as default key.
+2017-06-25 12:51:49.211 +08:00 [Debug] [Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor] [{ Id: 51 }] Decrypting secret element using Windows DPAPI.
+2017-06-25 12:51:49.228 +08:00 [Debug] [Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.CngCbcAuthenticatedEncryptorDescriptor] [{ Id: 4 }] Opening CNG algorithm '"AES"' from provider 'null' with chaining mode CBC.
+2017-06-25 12:51:49.238 +08:00 [Debug] [Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.CngCbcAuthenticatedEncryptorDescriptor] [{ Id: 3 }] Opening CNG algorithm '"SHA256"' from provider 'null' with HMAC.
+2017-06-25 12:51:49.253 +08:00 [Debug] [Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider] [{ Id: 2 }] Using key {2de46559-992f-4ac7-a51d-24731a60b0b9} as the default key.
+2017-06-25 12:51:49.324 +08:00 [Debug] [SaasKit.Multitenancy.Internal.TenantResolutionMiddleware] [] Resolving TenantContext using "CachingSiteResolver".
+2017-06-25 12:51:49.331 +08:00 [Debug] [SaasKit.Multitenancy.MemoryCacheTenantResolver] [] TenantContext not present in cache with key ""localhost:52472"". Attempting to resolve.
+2017-06-25 12:51:49.340 +08:00 [Debug] [SaasKit.Multitenancy.MemoryCacheTenantResolver] [] TenantContext:"41ed80e1-0ffb-47c5-bb80-213fee8bde17" resolved. Caching with keys "["localhost:50000", "localhost:52472", "tenant1.local:50000", "pandene-001-site1.ftempurl.com", "wanderlustcoder.com", "www.wanderlustcoder.com", "localhost"]".
+2017-06-25 12:51:49.356 +08:00 [Debug] [SaasKit.Multitenancy.Internal.TenantResolutionMiddleware] [] TenantContext Resolved. Adding to HttpContext.
+2017-06-25 12:51:49.442 +08:00 [Information] [Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware] [{ Id: 3 }] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "eo4coding".
+2017-06-25 12:51:49.726 +08:00 [Debug] [Microsoft.AspNetCore.Routing.RouteBase] [{ Id: 1 }] Request successfully matched the route with name '"blogindex"' and template '""'.
+2017-06-25 12:51:49.815 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker] [{ Id: 1 }] Executing action "cloudscribe.SimpleContent.Web.Mvc.Controllers.BlogController.Index (cloudscribe.SimpleContent.Web.Mvc)"
+2017-06-25 12:51:50.216 +08:00 [Information] [Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker] [{ Id: 1 }] Executing action method "cloudscribe.SimpleContent.Web.Mvc.Controllers.BlogController.Index (cloudscribe.SimpleContent.Web.Mvc)" with arguments (["", "1"]) - ModelState is Valid
+2017-06-25 12:51:50.336 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker] [{ Id: 2 }] Executed action method "cloudscribe.SimpleContent.Web.Mvc.Controllers.BlogController.Index (cloudscribe.SimpleContent.Web.Mvc)", returned result "Microsoft.AspNetCore.Mvc.ViewResult".
+2017-06-25 12:51:50.358 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine] [{ Id: 1 }] View lookup cache miss for view '"Index"' in controller '"Blog"'.
+2017-06-25 12:54:24.584 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 1 }] Connection id ""0HL5RGNHO97QV"" started.
+2017-06-25 12:54:24.584 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 19 }] Connection id ""0HL5RGNHO97QT"" reset.

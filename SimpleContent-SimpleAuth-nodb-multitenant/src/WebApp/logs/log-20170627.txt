@@ -1,0 +1,616 @@
+2017-06-27 16:30:32.977 +08:00 [Information] [Microsoft.Extensions.DependencyInjection.DataProtectionServices] [] User profile is available. Using '"C:\Users\ebeno\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2017-06-27 16:30:33.092 +08:00 [Debug] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 3 }] Hosting starting
+2017-06-27 16:30:33.424 +08:00 [Debug] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 4 }] Hosting started
+2017-06-27 16:30:33.458 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 1 }] Connection id ""0HL5T6R3JMCK6"" started.
+2017-06-27 16:30:33.458 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 1 }] Connection id ""0HL5T6R3JMCK5"" started.
+2017-06-27 16:30:33.684 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 1 }] Request starting HTTP/1.1 DEBUG http://localhost:52472/  0
+2017-06-27 16:30:33.684 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 1 }] Request starting HTTP/1.1 GET http://localhost:52472/  
+2017-06-27 16:30:33.811 +08:00 [Debug] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 4 }] The request path "/" does not match a supported file type
+2017-06-27 16:30:33.811 +08:00 [Debug] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 3 }] The request path "" does not match the path filter
+2017-06-27 16:30:33.812 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 9 }] Connection id ""0HL5T6R3JMCK5"" completed keep alive response.
+2017-06-27 16:30:33.825 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 2 }] Request finished in 162.5081ms 200 
+2017-06-27 16:30:33.855 +08:00 [Debug] [Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository] [{ Id: 37 }] Reading data from file '"C:\Users\ebeno\AppData\Local\ASP.NET\DataProtection-Keys\key-2de46559-992f-4ac7-a51d-24731a60b0b9.xml"'.
+2017-06-27 16:30:33.868 +08:00 [Debug] [Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository] [{ Id: 37 }] Reading data from file '"C:\Users\ebeno\AppData\Local\ASP.NET\DataProtection-Keys\key-bf08f74b-ab40-452b-907b-ab53ec09f8b6.xml"'.
+2017-06-27 16:30:33.875 +08:00 [Debug] [Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager] [{ Id: 18 }] Found key {2de46559-992f-4ac7-a51d-24731a60b0b9}.
+2017-06-27 16:30:33.880 +08:00 [Debug] [Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager] [{ Id: 18 }] Found key {bf08f74b-ab40-452b-907b-ab53ec09f8b6}.
+2017-06-27 16:30:33.890 +08:00 [Debug] [Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver] [{ Id: 13 }] Considering key {2de46559-992f-4ac7-a51d-24731a60b0b9} with expiration date 2017-07-25 11:05:16Z as default key.
+2017-06-27 16:30:33.900 +08:00 [Debug] [Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor] [{ Id: 51 }] Decrypting secret element using Windows DPAPI.
+2017-06-27 16:30:33.914 +08:00 [Debug] [Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.CngCbcAuthenticatedEncryptorDescriptor] [{ Id: 4 }] Opening CNG algorithm '"AES"' from provider 'null' with chaining mode CBC.
+2017-06-27 16:30:33.925 +08:00 [Debug] [Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.CngCbcAuthenticatedEncryptorDescriptor] [{ Id: 3 }] Opening CNG algorithm '"SHA256"' from provider 'null' with HMAC.
+2017-06-27 16:30:33.938 +08:00 [Debug] [Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider] [{ Id: 2 }] Using key {2de46559-992f-4ac7-a51d-24731a60b0b9} as the default key.
+2017-06-27 16:30:34.007 +08:00 [Debug] [SaasKit.Multitenancy.Internal.TenantResolutionMiddleware] [] Resolving TenantContext using "CachingSiteResolver".
+2017-06-27 16:30:34.014 +08:00 [Debug] [SaasKit.Multitenancy.MemoryCacheTenantResolver] [] TenantContext not present in cache with key ""localhost:52472"". Attempting to resolve.
+2017-06-27 16:30:34.022 +08:00 [Debug] [SaasKit.Multitenancy.MemoryCacheTenantResolver] [] TenantContext:"0619afd6-0bac-4843-90f6-ab59103a7199" resolved. Caching with keys "["localhost:50000", "localhost:52472", "tenant1.local:50000", "pandene-001-site1.ftempurl.com", "wanderlustcoder.com", "www.wanderlustcoder.com", "localhost"]".
+2017-06-27 16:30:34.033 +08:00 [Debug] [SaasKit.Multitenancy.Internal.TenantResolutionMiddleware] [] TenantContext Resolved. Adding to HttpContext.
+2017-06-27 16:30:34.134 +08:00 [Information] [Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware] [{ Id: 3 }] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "eo4coding".
+2017-06-27 16:30:34.414 +08:00 [Debug] [Microsoft.AspNetCore.Routing.RouteBase] [{ Id: 1 }] Request successfully matched the route with name '"blogindex"' and template '""'.
+2017-06-27 16:30:34.498 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker] [{ Id: 1 }] Executing action "cloudscribe.SimpleContent.Web.Mvc.Controllers.BlogController.Index (cloudscribe.SimpleContent.Web.Mvc)"
+2017-06-27 16:30:34.870 +08:00 [Information] [Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker] [{ Id: 1 }] Executing action method "cloudscribe.SimpleContent.Web.Mvc.Controllers.BlogController.Index (cloudscribe.SimpleContent.Web.Mvc)" with arguments (["", "1"]) - ModelState is Valid
+2017-06-27 16:30:35.008 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker] [{ Id: 2 }] Executed action method "cloudscribe.SimpleContent.Web.Mvc.Controllers.BlogController.Index (cloudscribe.SimpleContent.Web.Mvc)", returned result "Microsoft.AspNetCore.Mvc.ViewResult".
+2017-06-27 16:30:35.029 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine] [{ Id: 1 }] View lookup cache miss for view '"Index"' in controller '"Blog"'.
+2017-06-27 16:30:45.096 +08:00 [Debug] [SaasKit.Multitenancy.MemoryCacheTenantResolver] [] Disposing TenantContext:"0619afd6-0bac-4843-90f6-ab59103a7199" instance with key ""localhost:50000"".
+2017-06-27 16:30:45.097 +08:00 [Debug] [SaasKit.Multitenancy.MemoryCacheTenantResolver] [] Disposing TenantContext:"0619afd6-0bac-4843-90f6-ab59103a7199" instance with key ""www.wanderlustcoder.com"".
+2017-06-27 16:30:45.097 +08:00 [Debug] [SaasKit.Multitenancy.MemoryCacheTenantResolver] [] Disposing TenantContext:"0619afd6-0bac-4843-90f6-ab59103a7199" instance with key ""localhost"".
+2017-06-27 16:30:45.097 +08:00 [Debug] [SaasKit.Multitenancy.MemoryCacheTenantResolver] [] Disposing TenantContext:"0619afd6-0bac-4843-90f6-ab59103a7199" instance with key ""localhost:52472"".
+2017-06-27 16:30:45.097 +08:00 [Debug] [SaasKit.Multitenancy.MemoryCacheTenantResolver] [] Disposing TenantContext:"0619afd6-0bac-4843-90f6-ab59103a7199" instance with key ""wanderlustcoder.com"".
+2017-06-27 16:30:45.097 +08:00 [Debug] [SaasKit.Multitenancy.MemoryCacheTenantResolver] [] Disposing TenantContext:"0619afd6-0bac-4843-90f6-ab59103a7199" instance with key ""tenant1.local:50000"".
+2017-06-27 16:30:45.097 +08:00 [Debug] [SaasKit.Multitenancy.MemoryCacheTenantResolver] [] Disposing TenantContext:"0619afd6-0bac-4843-90f6-ab59103a7199" instance with key ""pandene-001-site1.ftempurl.com"".
+2017-06-27 16:30:45.112 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.RazorCompilationService] [{ Id: 1 }] Code generation for the Razor file at '"/Views/Blog/Index.cshtml"' started.
+2017-06-27 16:30:45.711 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.RazorCompilationService] [{ Id: 2 }] Code generation for the Razor file at '"/Views/Blog/Index.cshtml"' completed in 597.1841ms.
+2017-06-27 16:30:45.729 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRoslynCompilationService] [{ Id: 1 }] Compilation of the generated code for the Razor file at '"/Views/Blog/Index.cshtml"' started.
+2017-06-27 16:30:49.504 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRoslynCompilationService] [{ Id: 2 }] Compilation of the generated code for the Razor file at '"/Views/Blog/Index.cshtml"' completed in 3774.9357ms.
+2017-06-27 16:30:49.516 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.RazorCompilationService] [{ Id: 1 }] Code generation for the Razor file at '"/Views/_ViewStart.cshtml"' started.
+2017-06-27 16:30:49.554 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.RazorCompilationService] [{ Id: 2 }] Code generation for the Razor file at '"/Views/_ViewStart.cshtml"' completed in 37.7801ms.
+2017-06-27 16:30:49.554 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRoslynCompilationService] [{ Id: 1 }] Compilation of the generated code for the Razor file at '"/Views/_ViewStart.cshtml"' started.
+2017-06-27 16:30:51.660 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRoslynCompilationService] [{ Id: 2 }] Compilation of the generated code for the Razor file at '"/Views/_ViewStart.cshtml"' completed in 2106.7286ms.
+2017-06-27 16:30:51.669 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor] [{ Id: 2 }] The view '"Index"' was found.
+2017-06-27 16:30:51.671 +08:00 [Information] [Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor] [{ Id: 1 }] Executing ViewResult, running view at path "/Views/Blog/Index.cshtml".
+2017-06-27 16:30:51.767 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine] [{ Id: 1 }] View lookup cache miss for view '"BlogHeaderPartial"' in controller '"Blog"'.
+2017-06-27 16:30:51.772 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.RazorCompilationService] [{ Id: 1 }] Code generation for the Razor file at '"/Views/Blog/BlogHeaderPartial.cshtml"' started.
+2017-06-27 16:30:51.794 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.RazorCompilationService] [{ Id: 2 }] Code generation for the Razor file at '"/Views/Blog/BlogHeaderPartial.cshtml"' completed in 22.8045ms.
+2017-06-27 16:30:51.795 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRoslynCompilationService] [{ Id: 1 }] Compilation of the generated code for the Razor file at '"/Views/Blog/BlogHeaderPartial.cshtml"' started.
+2017-06-27 16:30:53.864 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRoslynCompilationService] [{ Id: 2 }] Compilation of the generated code for the Razor file at '"/Views/Blog/BlogHeaderPartial.cshtml"' completed in 2069.594ms.
+2017-06-27 16:30:53.933 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine] [{ Id: 1 }] View lookup cache miss for view '"PostListPartial"' in controller '"Blog"'.
+2017-06-27 16:30:53.934 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.RazorCompilationService] [{ Id: 1 }] Code generation for the Razor file at '"/Views/Blog/PostListPartial.cshtml"' started.
+2017-06-27 16:30:53.946 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.RazorCompilationService] [{ Id: 2 }] Code generation for the Razor file at '"/Views/Blog/PostListPartial.cshtml"' completed in 11.8522ms.
+2017-06-27 16:30:53.946 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRoslynCompilationService] [{ Id: 1 }] Compilation of the generated code for the Razor file at '"/Views/Blog/PostListPartial.cshtml"' started.
+2017-06-27 16:30:56.006 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRoslynCompilationService] [{ Id: 2 }] Compilation of the generated code for the Razor file at '"/Views/Blog/PostListPartial.cshtml"' completed in 2059.1833ms.
+2017-06-27 16:30:56.010 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine] [{ Id: 1 }] View lookup cache miss for view '"PostPartial"' in controller '"Blog"'.
+2017-06-27 16:30:56.020 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.RazorCompilationService] [{ Id: 1 }] Code generation for the Razor file at '"/Themes/eo4coding/Blog/PostPartial_eo4coding.cshtml"' started.
+2017-06-27 16:30:56.135 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.RazorCompilationService] [{ Id: 2 }] Code generation for the Razor file at '"/Themes/eo4coding/Blog/PostPartial_eo4coding.cshtml"' completed in 115.1102ms.
+2017-06-27 16:30:56.135 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRoslynCompilationService] [{ Id: 1 }] Compilation of the generated code for the Razor file at '"/Themes/eo4coding/Blog/PostPartial_eo4coding.cshtml"' started.
+2017-06-27 16:30:58.275 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRoslynCompilationService] [{ Id: 2 }] Compilation of the generated code for the Razor file at '"/Themes/eo4coding/Blog/PostPartial_eo4coding.cshtml"' completed in 2139.6076ms.
+2017-06-27 16:30:58.461 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine] [{ Id: 2 }] View lookup cache hit for view '"PostPartial"' in controller '"Blog"'.
+2017-06-27 16:30:58.493 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine] [{ Id: 1 }] View lookup cache miss for view '"AboutPartial"' in controller '"Blog"'.
+2017-06-27 16:30:58.500 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.RazorCompilationService] [{ Id: 1 }] Code generation for the Razor file at '"/Themes/eo4coding/Blog/AboutPartial_eo4coding.cshtml"' started.
+2017-06-27 16:30:58.511 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.RazorCompilationService] [{ Id: 2 }] Code generation for the Razor file at '"/Themes/eo4coding/Blog/AboutPartial_eo4coding.cshtml"' completed in 10.6765ms.
+2017-06-27 16:30:58.511 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRoslynCompilationService] [{ Id: 1 }] Compilation of the generated code for the Razor file at '"/Themes/eo4coding/Blog/AboutPartial_eo4coding.cshtml"' started.
+2017-06-27 16:31:00.534 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRoslynCompilationService] [{ Id: 2 }] Compilation of the generated code for the Razor file at '"/Themes/eo4coding/Blog/AboutPartial_eo4coding.cshtml"' completed in 2022.8807ms.
+2017-06-27 16:31:00.550 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine] [{ Id: 1 }] View lookup cache miss for view '"CategoryListPartial"' in controller '"Blog"'.
+2017-06-27 16:31:00.550 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.RazorCompilationService] [{ Id: 1 }] Code generation for the Razor file at '"/Views/Blog/CategoryListPartial.cshtml"' started.
+2017-06-27 16:31:00.562 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.RazorCompilationService] [{ Id: 2 }] Code generation for the Razor file at '"/Views/Blog/CategoryListPartial.cshtml"' completed in 11.1324ms.
+2017-06-27 16:31:00.562 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRoslynCompilationService] [{ Id: 1 }] Compilation of the generated code for the Razor file at '"/Views/Blog/CategoryListPartial.cshtml"' started.
+2017-06-27 16:31:02.588 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRoslynCompilationService] [{ Id: 2 }] Compilation of the generated code for the Razor file at '"/Views/Blog/CategoryListPartial.cshtml"' completed in 2026.0116ms.
+2017-06-27 16:31:02.613 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine] [{ Id: 1 }] View lookup cache miss for view '"ArchiveListPartial"' in controller '"Blog"'.
+2017-06-27 16:31:02.614 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.RazorCompilationService] [{ Id: 1 }] Code generation for the Razor file at '"/Views/Blog/ArchiveListPartial.cshtml"' started.
+2017-06-27 16:31:02.627 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.RazorCompilationService] [{ Id: 2 }] Code generation for the Razor file at '"/Views/Blog/ArchiveListPartial.cshtml"' completed in 13.0038ms.
+2017-06-27 16:31:02.627 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRoslynCompilationService] [{ Id: 1 }] Compilation of the generated code for the Razor file at '"/Views/Blog/ArchiveListPartial.cshtml"' started.
+2017-06-27 16:31:04.951 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRoslynCompilationService] [{ Id: 2 }] Compilation of the generated code for the Razor file at '"/Views/Blog/ArchiveListPartial.cshtml"' completed in 2323.8367ms.
+2017-06-27 16:31:04.979 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine] [{ Id: 1 }] View lookup cache miss for view '"_Layout"' in controller '"Blog"'.
+2017-06-27 16:31:04.979 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.RazorCompilationService] [{ Id: 1 }] Code generation for the Razor file at '"/Themes/eo4coding/Shared/_Layout_eo4coding.cshtml"' started.
+2017-06-27 16:31:05.015 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.RazorCompilationService] [{ Id: 2 }] Code generation for the Razor file at '"/Themes/eo4coding/Shared/_Layout_eo4coding.cshtml"' completed in 36.1698ms.
+2017-06-27 16:31:05.015 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRoslynCompilationService] [{ Id: 1 }] Compilation of the generated code for the Razor file at '"/Themes/eo4coding/Shared/_Layout_eo4coding.cshtml"' started.
+2017-06-27 16:31:07.127 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRoslynCompilationService] [{ Id: 2 }] Compilation of the generated code for the Razor file at '"/Themes/eo4coding/Shared/_Layout_eo4coding.cshtml"' completed in 2111.749ms.
+2017-06-27 16:31:07.153 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine] [{ Id: 1 }] View lookup cache miss for view '"BlogMetaPartial"' in controller '"Blog"'.
+2017-06-27 16:31:07.153 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.RazorCompilationService] [{ Id: 1 }] Code generation for the Razor file at '"/Views/Blog/BlogMetaPartial.cshtml"' started.
+2017-06-27 16:31:07.173 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.RazorCompilationService] [{ Id: 2 }] Code generation for the Razor file at '"/Views/Blog/BlogMetaPartial.cshtml"' completed in 19.8565ms.
+2017-06-27 16:31:07.173 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRoslynCompilationService] [{ Id: 1 }] Compilation of the generated code for the Razor file at '"/Views/Blog/BlogMetaPartial.cshtml"' started.
+2017-06-27 16:31:09.173 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRoslynCompilationService] [{ Id: 2 }] Compilation of the generated code for the Razor file at '"/Views/Blog/BlogMetaPartial.cshtml"' completed in 2000.3342ms.
+2017-06-27 16:31:09.191 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine] [{ Id: 1 }] View lookup cache miss for view '"BlogStylePartial"' in controller '"Blog"'.
+2017-06-27 16:31:09.192 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.RazorCompilationService] [{ Id: 1 }] Code generation for the Razor file at '"/Views/Blog/BlogStylePartial.cshtml"' started.
+2017-06-27 16:31:09.202 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.RazorCompilationService] [{ Id: 2 }] Code generation for the Razor file at '"/Views/Blog/BlogStylePartial.cshtml"' completed in 9.8141ms.
+2017-06-27 16:31:09.202 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRoslynCompilationService] [{ Id: 1 }] Compilation of the generated code for the Razor file at '"/Views/Blog/BlogStylePartial.cshtml"' started.
+2017-06-27 16:31:11.189 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRoslynCompilationService] [{ Id: 2 }] Compilation of the generated code for the Razor file at '"/Views/Blog/BlogStylePartial.cshtml"' completed in 1986.9199ms.
+2017-06-27 16:31:11.235 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentInvoker] [{ Id: 1 }] Executing view component "cloudscribe.Web.Navigation.NavigationViewComponent" with arguments (["BootstrapTopNavWithDropdowns", "topnav", ""]).
+2017-06-27 16:31:11.555 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentInvoker] [{ Id: 2 }] Executed view component "cloudscribe.Web.Navigation.NavigationViewComponent" in 315.4629ms and returned "Microsoft.AspNetCore.Mvc.ViewComponents.ViewViewComponentResult"
+2017-06-27 16:31:11.559 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine] [{ Id: 1 }] View lookup cache miss for view '"Components/Navigation/BootstrapTopNavWithDropdowns"' in controller '"Blog"'.
+2017-06-27 16:31:11.560 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.RazorCompilationService] [{ Id: 1 }] Code generation for the Razor file at '"/Views/Shared/Components/Navigation/BootstrapTopNavWithDropdowns.cshtml"' started.
+2017-06-27 16:31:11.578 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.RazorCompilationService] [{ Id: 2 }] Code generation for the Razor file at '"/Views/Shared/Components/Navigation/BootstrapTopNavWithDropdowns.cshtml"' completed in 17.7327ms.
+2017-06-27 16:31:11.578 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRoslynCompilationService] [{ Id: 1 }] Compilation of the generated code for the Razor file at '"/Views/Shared/Components/Navigation/BootstrapTopNavWithDropdowns.cshtml"' started.
+2017-06-27 16:31:13.602 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRoslynCompilationService] [{ Id: 2 }] Compilation of the generated code for the Razor file at '"/Views/Shared/Components/Navigation/BootstrapTopNavWithDropdowns.cshtml"' completed in 2023.2367ms.
+2017-06-27 16:31:13.642 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine] [{ Id: 1 }] View lookup cache miss for view '"_LoginPartial"' in controller '"Blog"'.
+2017-06-27 16:31:13.653 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.RazorCompilationService] [{ Id: 1 }] Code generation for the Razor file at '"/Themes/eo4coding/Shared/_LoginPartial_eo4coding.cshtml"' started.
+2017-06-27 16:31:13.667 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.RazorCompilationService] [{ Id: 2 }] Code generation for the Razor file at '"/Themes/eo4coding/Shared/_LoginPartial_eo4coding.cshtml"' completed in 14.2222ms.
+2017-06-27 16:31:13.667 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRoslynCompilationService] [{ Id: 1 }] Compilation of the generated code for the Razor file at '"/Themes/eo4coding/Shared/_LoginPartial_eo4coding.cshtml"' started.
+2017-06-27 16:31:15.693 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRoslynCompilationService] [{ Id: 2 }] Compilation of the generated code for the Razor file at '"/Themes/eo4coding/Shared/_LoginPartial_eo4coding.cshtml"' completed in 2025.8678ms.
+2017-06-27 16:31:15.757 +08:00 [Debug] [Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery] [{ Id: 6 }] An antiforgery cookie token was reused.
+2017-06-27 16:31:15.767 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine] [{ Id: 1 }] View lookup cache miss for view '"ToolsPartial"' in controller '"Blog"'.
+2017-06-27 16:31:15.768 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.RazorCompilationService] [{ Id: 1 }] Code generation for the Razor file at '"/Views/Blog/ToolsPartial.cshtml"' started.
+2017-06-27 16:31:15.783 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.RazorCompilationService] [{ Id: 2 }] Code generation for the Razor file at '"/Views/Blog/ToolsPartial.cshtml"' completed in 14.8152ms.
+2017-06-27 16:31:15.783 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRoslynCompilationService] [{ Id: 1 }] Compilation of the generated code for the Razor file at '"/Views/Blog/ToolsPartial.cshtml"' started.
+2017-06-27 16:31:17.842 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRoslynCompilationService] [{ Id: 2 }] Compilation of the generated code for the Razor file at '"/Views/Blog/ToolsPartial.cshtml"' completed in 2058.3991ms.
+2017-06-27 16:31:17.896 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine] [{ Id: 1 }] View lookup cache miss for view '"BlogScriptsPartial"' in controller '"Blog"'.
+2017-06-27 16:31:17.896 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.RazorCompilationService] [{ Id: 1 }] Code generation for the Razor file at '"/Views/Blog/BlogScriptsPartial.cshtml"' started.
+2017-06-27 16:31:17.907 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.RazorCompilationService] [{ Id: 2 }] Code generation for the Razor file at '"/Views/Blog/BlogScriptsPartial.cshtml"' completed in 11.0328ms.
+2017-06-27 16:31:17.907 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRoslynCompilationService] [{ Id: 1 }] Compilation of the generated code for the Razor file at '"/Views/Blog/BlogScriptsPartial.cshtml"' started.
+2017-06-27 16:31:19.905 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRoslynCompilationService] [{ Id: 2 }] Compilation of the generated code for the Razor file at '"/Views/Blog/BlogScriptsPartial.cshtml"' completed in 1997.2503ms.
+2017-06-27 16:31:20.143 +08:00 [Information] [Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker] [{ Id: 2 }] Executed action "cloudscribe.SimpleContent.Web.Mvc.Controllers.BlogController.Index (cloudscribe.SimpleContent.Web.Mvc)" in 45643.0859ms
+2017-06-27 16:31:20.246 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 1 }] Connection id ""0HL5T6R3JMCK8"" started.
+2017-06-27 16:31:20.246 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 1 }] Connection id ""0HL5T6R3JMCK7"" started.
+2017-06-27 16:31:20.247 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 1 }] Connection id ""0HL5T6R3JMCK9"" started.
+2017-06-27 16:31:20.248 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 1 }] Request starting HTTP/1.1 GET http://localhost:52472/lib/jquery/dist/jquery.js  
+2017-06-27 16:31:20.248 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 1 }] Request starting HTTP/1.1 GET http://localhost:52472/css/themes/darkly/bootstrap.css  
+2017-06-27 16:31:20.248 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 1 }] Request starting HTTP/1.1 GET http://localhost:52472/css/site.css  
+2017-06-27 16:31:20.248 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 1 }] Request starting HTTP/1.1 GET http://localhost:52472/css/codestyle.css  
+2017-06-27 16:31:20.248 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 1 }] Connection id ""0HL5T6R3JMCKA"" started.
+2017-06-27 16:31:20.248 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 1 }] Request starting HTTP/1.1 GET http://localhost:52472/csscsr/css/blog-common.css  
+2017-06-27 16:31:20.253 +08:00 [Debug] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 5 }] The request path "/csscsr/css/blog-common.css" does not match an existing file
+2017-06-27 16:31:20.254 +08:00 [Debug] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 3 }] The request path "" does not match the path filter
+2017-06-27 16:31:20.254 +08:00 [Debug] [SaasKit.Multitenancy.Internal.TenantResolutionMiddleware] [] Resolving TenantContext using "CachingSiteResolver".
+2017-06-27 16:31:20.254 +08:00 [Debug] [SaasKit.Multitenancy.MemoryCacheTenantResolver] [] TenantContext not present in cache with key ""localhost:52472"". Attempting to resolve.
+2017-06-27 16:31:20.254 +08:00 [Debug] [SaasKit.Multitenancy.MemoryCacheTenantResolver] [] TenantContext:"94644635-3ddb-4d87-a302-6babd29e7ace" resolved. Caching with keys "["localhost:50000", "localhost:52472", "tenant1.local:50000", "pandene-001-site1.ftempurl.com", "wanderlustcoder.com", "www.wanderlustcoder.com", "localhost"]".
+2017-06-27 16:31:20.254 +08:00 [Debug] [SaasKit.Multitenancy.Internal.TenantResolutionMiddleware] [] TenantContext Resolved. Adding to HttpContext.
+2017-06-27 16:31:20.255 +08:00 [Information] [Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware] [{ Id: 3 }] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "eo4coding".
+2017-06-27 16:31:20.255 +08:00 [Debug] [Microsoft.AspNetCore.Routing.RouteBase] [{ Id: 1 }] Request successfully matched the route with name '"csscsrcss"' and template '"csscsr/css/{*slug}"'.
+2017-06-27 16:31:20.257 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker] [{ Id: 1 }] Executing action "cloudscribe.SimpleContent.Web.Mvc.Controllers.csscsrController.css (cloudscribe.SimpleContent.Web.Mvc)"
+2017-06-27 16:31:20.257 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 9 }] Connection id ""0HL5T6R3JMCK6"" completed keep alive response.
+2017-06-27 16:31:20.258 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 2 }] Request finished in 46607.9033ms 200 text/html; charset=utf-8
+2017-06-27 16:31:20.260 +08:00 [Information] [Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker] [{ Id: 1 }] Executing action method "cloudscribe.SimpleContent.Web.Mvc.Controllers.csscsrController.css (cloudscribe.SimpleContent.Web.Mvc)" with arguments (null) - ModelState is Valid
+2017-06-27 16:31:20.261 +08:00 [Debug] [cloudscribe.SimpleContent.Web.Mvc.Controllers.csscsrController] [] /csscsr/css/blog-common.css requested
+2017-06-27 16:31:20.263 +08:00 [Debug] [cloudscribe.Web.Common.Helpers.ResourceHelper] [] mimetype text/css found for .css
+2017-06-27 16:31:20.265 +08:00 [Debug] [cloudscribe.SimpleContent.Web.Mvc.Controllers.csscsrController] [] resource found for cloudscribe.SimpleContent.Web.Mvc.css.blog-common.css
+2017-06-27 16:31:20.265 +08:00 [Information] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 2 }] Sending file. Request path: '"/css/site.css"'. Physical path: '"C:\Systems\GitHub\WanderlustWeb\cloudscribe.StarterKits\SimpleContent-SimpleAuth-nodb-multitenant\src\WebApp\wwwroot\css\site.css"'
+2017-06-27 16:31:20.265 +08:00 [Information] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 2 }] Sending file. Request path: '"/css/themes/darkly/bootstrap.css"'. Physical path: '"C:\Systems\GitHub\WanderlustWeb\cloudscribe.StarterKits\SimpleContent-SimpleAuth-nodb-multitenant\src\WebApp\wwwroot\css\themes\darkly\bootstrap.css"'
+2017-06-27 16:31:20.265 +08:00 [Information] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 2 }] Sending file. Request path: '"/lib/jquery/dist/jquery.js"'. Physical path: '"C:\Systems\GitHub\WanderlustWeb\cloudscribe.StarterKits\SimpleContent-SimpleAuth-nodb-multitenant\src\WebApp\wwwroot\lib\jquery\dist\jquery.js"'
+2017-06-27 16:31:20.265 +08:00 [Information] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 2 }] Sending file. Request path: '"/css/codestyle.css"'. Physical path: '"C:\Systems\GitHub\WanderlustWeb\cloudscribe.StarterKits\SimpleContent-SimpleAuth-nodb-multitenant\src\WebApp\wwwroot\css\codestyle.css"'
+2017-06-27 16:31:20.266 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker] [{ Id: 2 }] Executed action method "cloudscribe.SimpleContent.Web.Mvc.Controllers.csscsrController.css (cloudscribe.SimpleContent.Web.Mvc)", returned result "Microsoft.AspNetCore.Mvc.FileStreamResult".
+2017-06-27 16:31:20.270 +08:00 [Information] [Microsoft.AspNetCore.Mvc.Internal.VirtualFileResultExecutor] [{ Id: 1 }] Executing FileResult, sending file as ""
+2017-06-27 16:31:20.273 +08:00 [Information] [Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker] [{ Id: 2 }] Executed action "cloudscribe.SimpleContent.Web.Mvc.Controllers.csscsrController.css (cloudscribe.SimpleContent.Web.Mvc)" in 15.7862ms
+2017-06-27 16:31:20.273 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 9 }] Connection id ""0HL5T6R3JMCKA"" completed keep alive response.
+2017-06-27 16:31:20.274 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 2 }] Request finished in 24.8098ms 200 text/css
+2017-06-27 16:31:20.282 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 9 }] Connection id ""0HL5T6R3JMCK5"" completed keep alive response.
+2017-06-27 16:31:20.284 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 9 }] Connection id ""0HL5T6R3JMCK8"" completed keep alive response.
+2017-06-27 16:31:20.285 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 2 }] Request finished in 37.182ms 200 text/css
+2017-06-27 16:31:20.289 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 2 }] Request finished in 36.8122ms 200 text/css
+2017-06-27 16:31:20.291 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 9 }] Connection id ""0HL5T6R3JMCK9"" completed keep alive response.
+2017-06-27 16:31:20.291 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 2 }] Request finished in 43.3256ms 200 text/css
+2017-06-27 16:31:20.307 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 1 }] Request starting HTTP/1.1 GET http://localhost:52472/media/images/eben-ws.jpg  
+2017-06-27 16:31:20.308 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 1 }] Request starting HTTP/1.1 GET http://localhost:52472/media/images/Icon-md.png  
+2017-06-27 16:31:20.308 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 1 }] Request starting HTTP/1.1 GET http://localhost:52472/lib/bootstrap/dist/js/bootstrap.js  
+2017-06-27 16:31:20.309 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 1 }] Request starting HTTP/1.1 GET http://localhost:52472/js/site.js?v=Ynfdc1vuMNOWZfqTj4N3SPcebazoGXiIPgtfE-b2TO4  
+2017-06-27 16:31:20.309 +08:00 [Information] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 2 }] Sending file. Request path: '"/media/images/eben-ws.jpg"'. Physical path: '"C:\Systems\GitHub\WanderlustWeb\cloudscribe.StarterKits\SimpleContent-SimpleAuth-nodb-multitenant\src\WebApp\wwwroot\media\images\eben-ws.jpg"'
+2017-06-27 16:31:20.310 +08:00 [Information] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 2 }] Sending file. Request path: '"/media/images/Icon-md.png"'. Physical path: '"C:\Systems\GitHub\WanderlustWeb\cloudscribe.StarterKits\SimpleContent-SimpleAuth-nodb-multitenant\src\WebApp\wwwroot\media\images\Icon-md.png"'
+2017-06-27 16:31:20.315 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 9 }] Connection id ""0HL5T6R3JMCK6"" completed keep alive response.
+2017-06-27 16:31:20.315 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 2 }] Request finished in 7.343ms 200 image/jpeg
+2017-06-27 16:31:20.316 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 9 }] Connection id ""0HL5T6R3JMCK5"" completed keep alive response.
+2017-06-27 16:31:20.316 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 2 }] Request finished in 7.5409ms 200 image/png
+2017-06-27 16:31:20.316 +08:00 [Information] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 2 }] Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.js"'. Physical path: '"C:\Systems\GitHub\WanderlustWeb\cloudscribe.StarterKits\SimpleContent-SimpleAuth-nodb-multitenant\src\WebApp\wwwroot\lib\bootstrap\dist\js\bootstrap.js"'
+2017-06-27 16:31:20.319 +08:00 [Information] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 2 }] Sending file. Request path: '"/js/site.js"'. Physical path: '"C:\Systems\GitHub\WanderlustWeb\cloudscribe.StarterKits\SimpleContent-SimpleAuth-nodb-multitenant\src\WebApp\wwwroot\js\site.js"'
+2017-06-27 16:31:20.321 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 9 }] Connection id ""0HL5T6R3JMCKA"" completed keep alive response.
+2017-06-27 16:31:20.322 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 2 }] Request finished in 13.3953ms 200 application/javascript
+2017-06-27 16:31:20.346 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 9 }] Connection id ""0HL5T6R3JMCK7"" completed keep alive response.
+2017-06-27 16:31:20.346 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 2 }] Request finished in 97.9831ms 200 application/javascript
+2017-06-27 16:31:20.351 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 9 }] Connection id ""0HL5T6R3JMCK8"" completed keep alive response.
+2017-06-27 16:31:20.351 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 2 }] Request finished in 43.0316ms 200 application/javascript
+2017-06-27 16:31:20.627 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 1 }] Request starting HTTP/1.1 GET http://localhost:52472/css/themes/fonts/glyphicons-halflings-regular.woff2  
+2017-06-27 16:31:20.629 +08:00 [Information] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 2 }] Sending file. Request path: '"/css/themes/fonts/glyphicons-halflings-regular.woff2"'. Physical path: '"C:\Systems\GitHub\WanderlustWeb\cloudscribe.StarterKits\SimpleContent-SimpleAuth-nodb-multitenant\src\WebApp\wwwroot\css\themes\fonts\glyphicons-halflings-regular.woff2"'
+2017-06-27 16:31:20.636 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 9 }] Connection id ""0HL5T6R3JMCK9"" completed keep alive response.
+2017-06-27 16:31:20.637 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 2 }] Request finished in 9.641ms 200 application/font-woff2
+2017-06-27 16:31:20.857 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 1 }] Request starting HTTP/1.1 GET http://localhost:52472/media/images/Icon-sml.png  
+2017-06-27 16:31:20.859 +08:00 [Information] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 2 }] Sending file. Request path: '"/media/images/Icon-sml.png"'. Physical path: '"C:\Systems\GitHub\WanderlustWeb\cloudscribe.StarterKits\SimpleContent-SimpleAuth-nodb-multitenant\src\WebApp\wwwroot\media\images\Icon-sml.png"'
+2017-06-27 16:31:20.862 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 9 }] Connection id ""0HL5T6R3JMCK6"" completed keep alive response.
+2017-06-27 16:31:20.862 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 2 }] Request finished in 4.8959ms 200 image/png
+2017-06-27 16:31:36.606 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 1 }] Request starting HTTP/1.1 GET http://localhost:52472/blog/2017/06/01/multi-tenancy-net-core  
+2017-06-27 16:31:36.608 +08:00 [Debug] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 4 }] The request path "/blog/2017/06/01/multi-tenancy-net-core" does not match a supported file type
+2017-06-27 16:31:36.608 +08:00 [Debug] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 3 }] The request path "" does not match the path filter
+2017-06-27 16:31:36.609 +08:00 [Debug] [SaasKit.Multitenancy.Internal.TenantResolutionMiddleware] [] Resolving TenantContext using "CachingSiteResolver".
+2017-06-27 16:31:36.609 +08:00 [Debug] [SaasKit.Multitenancy.MemoryCacheTenantResolver] [] TenantContext:"94644635-3ddb-4d87-a302-6babd29e7ace" retrieved from cache with key ""localhost:52472"".
+2017-06-27 16:31:36.609 +08:00 [Debug] [SaasKit.Multitenancy.Internal.TenantResolutionMiddleware] [] TenantContext Resolved. Adding to HttpContext.
+2017-06-27 16:31:36.609 +08:00 [Information] [Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware] [{ Id: 3 }] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "eo4coding".
+2017-06-27 16:31:36.609 +08:00 [Debug] [Microsoft.AspNetCore.Routing.RouteBase] [{ Id: 1 }] Request successfully matched the route with name '"postwithdate"' and template '"blog/{year}/{month}/{day}/{slug}"'.
+2017-06-27 16:31:36.612 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker] [{ Id: 1 }] Executing action "cloudscribe.SimpleContent.Web.Mvc.Controllers.BlogController.Post (cloudscribe.SimpleContent.Web.Mvc)"
+2017-06-27 16:31:36.661 +08:00 [Information] [Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker] [{ Id: 1 }] Executing action method "cloudscribe.SimpleContent.Web.Mvc.Controllers.BlogController.Post (cloudscribe.SimpleContent.Web.Mvc)" with arguments (["2017", "6", "1", "multi-tenancy-net-core"]) - ModelState is Valid
+2017-06-27 16:31:36.689 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker] [{ Id: 2 }] Executed action method "cloudscribe.SimpleContent.Web.Mvc.Controllers.BlogController.Post (cloudscribe.SimpleContent.Web.Mvc)", returned result "Microsoft.AspNetCore.Mvc.ViewResult".
+2017-06-27 16:31:36.690 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine] [{ Id: 1 }] View lookup cache miss for view '"Post"' in controller '"Blog"'.
+2017-06-27 16:31:36.690 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.RazorCompilationService] [{ Id: 1 }] Code generation for the Razor file at '"/Views/Blog/Post.cshtml"' started.
+2017-06-27 16:31:36.710 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.RazorCompilationService] [{ Id: 2 }] Code generation for the Razor file at '"/Views/Blog/Post.cshtml"' completed in 19.8407ms.
+2017-06-27 16:31:36.710 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRoslynCompilationService] [{ Id: 1 }] Compilation of the generated code for the Razor file at '"/Views/Blog/Post.cshtml"' started.
+2017-06-27 16:31:38.744 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRoslynCompilationService] [{ Id: 2 }] Compilation of the generated code for the Razor file at '"/Views/Blog/Post.cshtml"' completed in 2033.9132ms.
+2017-06-27 16:31:38.745 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor] [{ Id: 2 }] The view '"Post"' was found.
+2017-06-27 16:31:38.745 +08:00 [Information] [Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor] [{ Id: 1 }] Executing ViewResult, running view at path "/Views/Blog/Post.cshtml".
+2017-06-27 16:31:38.752 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine] [{ Id: 2 }] View lookup cache hit for view '"BlogHeaderPartial"' in controller '"Blog"'.
+2017-06-27 16:31:38.753 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine] [{ Id: 1 }] View lookup cache miss for view '"PostDetailPartial"' in controller '"Blog"'.
+2017-06-27 16:31:38.754 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.RazorCompilationService] [{ Id: 1 }] Code generation for the Razor file at '"/Views/Blog/PostDetailPartial.cshtml"' started.
+2017-06-27 16:31:38.773 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.RazorCompilationService] [{ Id: 2 }] Code generation for the Razor file at '"/Views/Blog/PostDetailPartial.cshtml"' completed in 18.8357ms.
+2017-06-27 16:31:38.773 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRoslynCompilationService] [{ Id: 1 }] Compilation of the generated code for the Razor file at '"/Views/Blog/PostDetailPartial.cshtml"' started.
+2017-06-27 16:31:40.843 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRoslynCompilationService] [{ Id: 2 }] Compilation of the generated code for the Razor file at '"/Views/Blog/PostDetailPartial.cshtml"' completed in 2070.3336ms.
+2017-06-27 16:31:40.867 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine] [{ Id: 1 }] View lookup cache miss for view '"NextPreviousPartial"' in controller '"Blog"'.
+2017-06-27 16:31:40.868 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.RazorCompilationService] [{ Id: 1 }] Code generation for the Razor file at '"/Views/Blog/NextPreviousPartial.cshtml"' started.
+2017-06-27 16:31:40.883 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.RazorCompilationService] [{ Id: 2 }] Code generation for the Razor file at '"/Views/Blog/NextPreviousPartial.cshtml"' completed in 15.0933ms.
+2017-06-27 16:31:40.883 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRoslynCompilationService] [{ Id: 1 }] Compilation of the generated code for the Razor file at '"/Views/Blog/NextPreviousPartial.cshtml"' started.
+2017-06-27 16:31:42.926 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRoslynCompilationService] [{ Id: 2 }] Compilation of the generated code for the Razor file at '"/Views/Blog/NextPreviousPartial.cshtml"' completed in 2042.2229ms.
+2017-06-27 16:31:42.972 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine] [{ Id: 1 }] View lookup cache miss for view '"CommentWrapperPartial"' in controller '"Blog"'.
+2017-06-27 16:31:42.972 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.RazorCompilationService] [{ Id: 1 }] Code generation for the Razor file at '"/Views/Blog/CommentWrapperPartial.cshtml"' started.
+2017-06-27 16:31:42.991 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.RazorCompilationService] [{ Id: 2 }] Code generation for the Razor file at '"/Views/Blog/CommentWrapperPartial.cshtml"' completed in 18.3276ms.
+2017-06-27 16:31:42.991 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRoslynCompilationService] [{ Id: 1 }] Compilation of the generated code for the Razor file at '"/Views/Blog/CommentWrapperPartial.cshtml"' started.
+2017-06-27 16:31:45.006 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRoslynCompilationService] [{ Id: 2 }] Compilation of the generated code for the Razor file at '"/Views/Blog/CommentWrapperPartial.cshtml"' completed in 2015.2604ms.
+2017-06-27 16:31:45.015 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine] [{ Id: 1 }] View lookup cache miss for view '"CommentFormPartial"' in controller '"Blog"'.
+2017-06-27 16:31:45.016 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.RazorCompilationService] [{ Id: 1 }] Code generation for the Razor file at '"/Views/Shared/CommentFormPartial.cshtml"' started.
+2017-06-27 16:31:45.034 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.RazorCompilationService] [{ Id: 2 }] Code generation for the Razor file at '"/Views/Shared/CommentFormPartial.cshtml"' completed in 18.095ms.
+2017-06-27 16:31:45.035 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRoslynCompilationService] [{ Id: 1 }] Compilation of the generated code for the Razor file at '"/Views/Shared/CommentFormPartial.cshtml"' started.
+2017-06-27 16:31:47.067 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRoslynCompilationService] [{ Id: 2 }] Compilation of the generated code for the Razor file at '"/Views/Shared/CommentFormPartial.cshtml"' completed in 2032.2745ms.
+2017-06-27 16:31:47.075 +08:00 [Debug] [Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery] [{ Id: 6 }] An antiforgery cookie token was reused.
+2017-06-27 16:31:47.077 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine] [{ Id: 2 }] View lookup cache hit for view '"AboutPartial"' in controller '"Blog"'.
+2017-06-27 16:31:47.077 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine] [{ Id: 2 }] View lookup cache hit for view '"CategoryListPartial"' in controller '"Blog"'.
+2017-06-27 16:31:47.078 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine] [{ Id: 2 }] View lookup cache hit for view '"ArchiveListPartial"' in controller '"Blog"'.
+2017-06-27 16:31:47.078 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine] [{ Id: 2 }] View lookup cache hit for view '"_Layout"' in controller '"Blog"'.
+2017-06-27 16:31:47.080 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine] [{ Id: 2 }] View lookup cache hit for view '"BlogMetaPartial"' in controller '"Blog"'.
+2017-06-27 16:31:47.081 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine] [{ Id: 2 }] View lookup cache hit for view '"BlogStylePartial"' in controller '"Blog"'.
+2017-06-27 16:31:47.082 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentInvoker] [{ Id: 1 }] Executing view component "cloudscribe.Web.Navigation.NavigationViewComponent" with arguments (["BootstrapTopNavWithDropdowns", "topnav", ""]).
+2017-06-27 16:31:47.100 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentInvoker] [{ Id: 2 }] Executed view component "cloudscribe.Web.Navigation.NavigationViewComponent" in 18.0444ms and returned "Microsoft.AspNetCore.Mvc.ViewComponents.ViewViewComponentResult"
+2017-06-27 16:31:47.100 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine] [{ Id: 2 }] View lookup cache hit for view '"Components/Navigation/BootstrapTopNavWithDropdowns"' in controller '"Blog"'.
+2017-06-27 16:31:47.104 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine] [{ Id: 2 }] View lookup cache hit for view '"_LoginPartial"' in controller '"Blog"'.
+2017-06-27 16:31:47.104 +08:00 [Debug] [Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery] [{ Id: 6 }] An antiforgery cookie token was reused.
+2017-06-27 16:31:47.114 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine] [{ Id: 2 }] View lookup cache hit for view '"ToolsPartial"' in controller '"Blog"'.
+2017-06-27 16:31:47.143 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine] [{ Id: 1 }] View lookup cache miss for view '"CommentScriptsPartial"' in controller '"Blog"'.
+2017-06-27 16:31:47.144 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.RazorCompilationService] [{ Id: 1 }] Code generation for the Razor file at '"/Views/Shared/CommentScriptsPartial.cshtml"' started.
+2017-06-27 16:31:47.162 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.RazorCompilationService] [{ Id: 2 }] Code generation for the Razor file at '"/Views/Shared/CommentScriptsPartial.cshtml"' completed in 18.3383ms.
+2017-06-27 16:31:47.163 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRoslynCompilationService] [{ Id: 1 }] Compilation of the generated code for the Razor file at '"/Views/Shared/CommentScriptsPartial.cshtml"' started.
+2017-06-27 16:31:49.190 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRoslynCompilationService] [{ Id: 2 }] Compilation of the generated code for the Razor file at '"/Views/Shared/CommentScriptsPartial.cshtml"' completed in 2027.5045ms.
+2017-06-27 16:31:49.206 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine] [{ Id: 2 }] View lookup cache hit for view '"BlogScriptsPartial"' in controller '"Blog"'.
+2017-06-27 16:31:49.234 +08:00 [Information] [Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker] [{ Id: 2 }] Executed action "cloudscribe.SimpleContent.Web.Mvc.Controllers.BlogController.Post (cloudscribe.SimpleContent.Web.Mvc)" in 12621.8466ms
+2017-06-27 16:31:49.237 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 9 }] Connection id ""0HL5T6R3JMCK5"" completed keep alive response.
+2017-06-27 16:31:49.238 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 2 }] Request finished in 12630.9966ms 200 text/html; charset=utf-8
+2017-06-27 16:31:49.264 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 1 }] Request starting HTTP/1.1 GET http://localhost:52472/csscsr/css/blog-common.css  
+2017-06-27 16:31:49.265 +08:00 [Debug] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 5 }] The request path "/csscsr/css/blog-common.css" does not match an existing file
+2017-06-27 16:31:49.265 +08:00 [Debug] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 3 }] The request path "" does not match the path filter
+2017-06-27 16:31:49.265 +08:00 [Debug] [SaasKit.Multitenancy.Internal.TenantResolutionMiddleware] [] Resolving TenantContext using "CachingSiteResolver".
+2017-06-27 16:31:49.265 +08:00 [Debug] [SaasKit.Multitenancy.MemoryCacheTenantResolver] [] TenantContext:"94644635-3ddb-4d87-a302-6babd29e7ace" retrieved from cache with key ""localhost:52472"".
+2017-06-27 16:31:49.265 +08:00 [Debug] [SaasKit.Multitenancy.Internal.TenantResolutionMiddleware] [] TenantContext Resolved. Adding to HttpContext.
+2017-06-27 16:31:49.265 +08:00 [Information] [Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware] [{ Id: 3 }] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "eo4coding".
+2017-06-27 16:31:49.265 +08:00 [Debug] [Microsoft.AspNetCore.Routing.RouteBase] [{ Id: 1 }] Request successfully matched the route with name '"csscsrcss"' and template '"csscsr/css/{*slug}"'.
+2017-06-27 16:31:49.266 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker] [{ Id: 1 }] Executing action "cloudscribe.SimpleContent.Web.Mvc.Controllers.csscsrController.css (cloudscribe.SimpleContent.Web.Mvc)"
+2017-06-27 16:31:49.267 +08:00 [Information] [Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker] [{ Id: 1 }] Executing action method "cloudscribe.SimpleContent.Web.Mvc.Controllers.csscsrController.css (cloudscribe.SimpleContent.Web.Mvc)" with arguments (null) - ModelState is Valid
+2017-06-27 16:31:49.267 +08:00 [Debug] [cloudscribe.SimpleContent.Web.Mvc.Controllers.csscsrController] [] /csscsr/css/blog-common.css requested
+2017-06-27 16:31:49.267 +08:00 [Debug] [cloudscribe.Web.Common.Helpers.ResourceHelper] [] mimetype text/css found for .css
+2017-06-27 16:31:49.267 +08:00 [Debug] [cloudscribe.SimpleContent.Web.Mvc.Controllers.csscsrController] [] resource found for cloudscribe.SimpleContent.Web.Mvc.css.blog-common.css
+2017-06-27 16:31:49.267 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker] [{ Id: 2 }] Executed action method "cloudscribe.SimpleContent.Web.Mvc.Controllers.csscsrController.css (cloudscribe.SimpleContent.Web.Mvc)", returned result "Microsoft.AspNetCore.Mvc.FileStreamResult".
+2017-06-27 16:31:49.267 +08:00 [Information] [Microsoft.AspNetCore.Mvc.Internal.VirtualFileResultExecutor] [{ Id: 1 }] Executing FileResult, sending file as ""
+2017-06-27 16:31:49.267 +08:00 [Information] [Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker] [{ Id: 2 }] Executed action "cloudscribe.SimpleContent.Web.Mvc.Controllers.csscsrController.css (cloudscribe.SimpleContent.Web.Mvc)" in 0.6324ms
+2017-06-27 16:31:49.267 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 9 }] Connection id ""0HL5T6R3JMCKA"" completed keep alive response.
+2017-06-27 16:31:49.267 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 2 }] Request finished in 3.6859ms 200 text/css
+2017-06-27 16:31:49.271 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 1 }] Request starting HTTP/1.1 GET http://localhost:52472/csscsr/js/blog-comments.js  
+2017-06-27 16:31:49.274 +08:00 [Debug] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 5 }] The request path "/csscsr/js/blog-comments.js" does not match an existing file
+2017-06-27 16:31:49.274 +08:00 [Debug] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 3 }] The request path "" does not match the path filter
+2017-06-27 16:31:49.274 +08:00 [Debug] [SaasKit.Multitenancy.Internal.TenantResolutionMiddleware] [] Resolving TenantContext using "CachingSiteResolver".
+2017-06-27 16:31:49.274 +08:00 [Debug] [SaasKit.Multitenancy.MemoryCacheTenantResolver] [] TenantContext:"94644635-3ddb-4d87-a302-6babd29e7ace" retrieved from cache with key ""localhost:52472"".
+2017-06-27 16:31:49.274 +08:00 [Debug] [SaasKit.Multitenancy.Internal.TenantResolutionMiddleware] [] TenantContext Resolved. Adding to HttpContext.
+2017-06-27 16:31:49.274 +08:00 [Information] [Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware] [{ Id: 3 }] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "eo4coding".
+2017-06-27 16:31:49.274 +08:00 [Debug] [Microsoft.AspNetCore.Routing.RouteBase] [{ Id: 1 }] Request successfully matched the route with name '"csscsrjs"' and template '"csscsr/js/{*slug}"'.
+2017-06-27 16:31:49.275 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker] [{ Id: 1 }] Executing action "cloudscribe.SimpleContent.Web.Mvc.Controllers.csscsrController.js (cloudscribe.SimpleContent.Web.Mvc)"
+2017-06-27 16:31:49.276 +08:00 [Information] [Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker] [{ Id: 1 }] Executing action method "cloudscribe.SimpleContent.Web.Mvc.Controllers.csscsrController.js (cloudscribe.SimpleContent.Web.Mvc)" with arguments (null) - ModelState is Valid
+2017-06-27 16:31:49.277 +08:00 [Debug] [cloudscribe.SimpleContent.Web.Mvc.Controllers.csscsrController] [] /csscsr/js/blog-comments.js requested
+2017-06-27 16:31:49.277 +08:00 [Debug] [cloudscribe.Web.Common.Helpers.ResourceHelper] [] mimetype application/javascript found for .js
+2017-06-27 16:31:49.277 +08:00 [Debug] [cloudscribe.SimpleContent.Web.Mvc.Controllers.csscsrController] [] resource found for cloudscribe.SimpleContent.Web.Mvc.js.blog-comments.js
+2017-06-27 16:31:49.277 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker] [{ Id: 2 }] Executed action method "cloudscribe.SimpleContent.Web.Mvc.Controllers.csscsrController.js (cloudscribe.SimpleContent.Web.Mvc)", returned result "Microsoft.AspNetCore.Mvc.FileStreamResult".
+2017-06-27 16:31:49.277 +08:00 [Information] [Microsoft.AspNetCore.Mvc.Internal.VirtualFileResultExecutor] [{ Id: 1 }] Executing FileResult, sending file as ""
+2017-06-27 16:31:49.278 +08:00 [Information] [Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker] [{ Id: 2 }] Executed action "cloudscribe.SimpleContent.Web.Mvc.Controllers.csscsrController.js (cloudscribe.SimpleContent.Web.Mvc)" in 2.0318ms
+2017-06-27 16:31:49.278 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 9 }] Connection id ""0HL5T6R3JMCK8"" completed keep alive response.
+2017-06-27 16:31:49.278 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 2 }] Request finished in 7.096ms 200 application/javascript
+2017-06-27 16:31:51.207 +08:00 [Debug] [SaasKit.Multitenancy.MemoryCacheTenantResolver] [] Disposing TenantContext:"94644635-3ddb-4d87-a302-6babd29e7ace" instance with key ""pandene-001-site1.ftempurl.com"".
+2017-06-27 16:31:51.207 +08:00 [Debug] [SaasKit.Multitenancy.MemoryCacheTenantResolver] [] Disposing TenantContext:"94644635-3ddb-4d87-a302-6babd29e7ace" instance with key ""wanderlustcoder.com"".
+2017-06-27 16:31:51.207 +08:00 [Debug] [SaasKit.Multitenancy.MemoryCacheTenantResolver] [] Disposing TenantContext:"94644635-3ddb-4d87-a302-6babd29e7ace" instance with key ""tenant1.local:50000"".
+2017-06-27 16:31:51.207 +08:00 [Debug] [SaasKit.Multitenancy.MemoryCacheTenantResolver] [] Disposing TenantContext:"94644635-3ddb-4d87-a302-6babd29e7ace" instance with key ""localhost:50000"".
+2017-06-27 16:31:51.207 +08:00 [Debug] [SaasKit.Multitenancy.MemoryCacheTenantResolver] [] Disposing TenantContext:"94644635-3ddb-4d87-a302-6babd29e7ace" instance with key ""localhost:52472"".
+2017-06-27 16:31:51.207 +08:00 [Debug] [SaasKit.Multitenancy.MemoryCacheTenantResolver] [] Disposing TenantContext:"94644635-3ddb-4d87-a302-6babd29e7ace" instance with key ""localhost"".
+2017-06-27 16:31:51.207 +08:00 [Debug] [SaasKit.Multitenancy.MemoryCacheTenantResolver] [] Disposing TenantContext:"94644635-3ddb-4d87-a302-6babd29e7ace" instance with key ""www.wanderlustcoder.com"".
+2017-06-27 16:31:54.854 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 1 }] Request starting HTTP/1.1 GET http://localhost:52472/blog/edit/multi-tenancy-net-core  
+2017-06-27 16:31:54.855 +08:00 [Debug] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 4 }] The request path "/blog/edit/multi-tenancy-net-core" does not match a supported file type
+2017-06-27 16:31:54.855 +08:00 [Debug] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 3 }] The request path "" does not match the path filter
+2017-06-27 16:31:54.856 +08:00 [Debug] [SaasKit.Multitenancy.Internal.TenantResolutionMiddleware] [] Resolving TenantContext using "CachingSiteResolver".
+2017-06-27 16:31:54.856 +08:00 [Debug] [SaasKit.Multitenancy.MemoryCacheTenantResolver] [] TenantContext not present in cache with key ""localhost:52472"". Attempting to resolve.
+2017-06-27 16:31:54.856 +08:00 [Debug] [SaasKit.Multitenancy.MemoryCacheTenantResolver] [] TenantContext:"1cb6d21e-839d-4cc0-bf4c-3f8acfd7b728" resolved. Caching with keys "["localhost:50000", "localhost:52472", "tenant1.local:50000", "pandene-001-site1.ftempurl.com", "wanderlustcoder.com", "www.wanderlustcoder.com", "localhost"]".
+2017-06-27 16:31:54.856 +08:00 [Debug] [SaasKit.Multitenancy.Internal.TenantResolutionMiddleware] [] TenantContext Resolved. Adding to HttpContext.
+2017-06-27 16:31:54.856 +08:00 [Information] [Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware] [{ Id: 3 }] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "eo4coding".
+2017-06-27 16:31:54.861 +08:00 [Debug] [Microsoft.AspNetCore.Routing.RouteConstraintMatcher] [{ Id: 1 }] Route value '"edit"' with key '"year"' did not match the constraint '"Microsoft.AspNetCore.Routing.Constraints.RegexRouteConstraint"'.
+2017-06-27 16:31:54.861 +08:00 [Debug] [Microsoft.AspNetCore.Routing.RouteBase] [{ Id: 1 }] Request successfully matched the route with name '"postedit"' and template '"blog/edit/{slug?}"'.
+2017-06-27 16:31:54.862 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Internal.ActionSelector] [{ Id: 2 }] Action '"cloudscribe.SimpleContent.Web.Mvc.Controllers.BlogController.Edit (cloudscribe.SimpleContent.Web.Mvc)"' with id '"e7f5c1e8-642b-410b-8829-db5091ffd050"' did not match the constraint '"Microsoft.AspNetCore.Mvc.Internal.HttpMethodActionConstraint"'
+2017-06-27 16:31:54.864 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker] [{ Id: 1 }] Executing action "cloudscribe.SimpleContent.Web.Mvc.Controllers.BlogController.Edit (cloudscribe.SimpleContent.Web.Mvc)"
+2017-06-27 16:31:54.864 +08:00 [Information] [Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker] [{ Id: 1 }] Executing action method "cloudscribe.SimpleContent.Web.Mvc.Controllers.BlogController.Edit (cloudscribe.SimpleContent.Web.Mvc)" with arguments (["multi-tenancy-net-core"]) - ModelState is Valid
+2017-06-27 16:31:54.885 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker] [{ Id: 2 }] Executed action method "cloudscribe.SimpleContent.Web.Mvc.Controllers.BlogController.Edit (cloudscribe.SimpleContent.Web.Mvc)", returned result "Microsoft.AspNetCore.Mvc.ViewResult".
+2017-06-27 16:31:54.886 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine] [{ Id: 1 }] View lookup cache miss for view '"Edit"' in controller '"Blog"'.
+2017-06-27 16:31:54.887 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.RazorCompilationService] [{ Id: 1 }] Code generation for the Razor file at '"/Views/Blog/Edit.cshtml"' started.
+2017-06-27 16:31:54.907 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.RazorCompilationService] [{ Id: 2 }] Code generation for the Razor file at '"/Views/Blog/Edit.cshtml"' completed in 20.1939ms.
+2017-06-27 16:31:54.907 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRoslynCompilationService] [{ Id: 1 }] Compilation of the generated code for the Razor file at '"/Views/Blog/Edit.cshtml"' started.
+2017-06-27 16:31:57.196 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRoslynCompilationService] [{ Id: 2 }] Compilation of the generated code for the Razor file at '"/Views/Blog/Edit.cshtml"' completed in 2288.7998ms.
+2017-06-27 16:31:57.197 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor] [{ Id: 2 }] The view '"Edit"' was found.
+2017-06-27 16:31:57.197 +08:00 [Information] [Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor] [{ Id: 1 }] Executing ViewResult, running view at path "/Views/Blog/Edit.cshtml".
+2017-06-27 16:31:57.368 +08:00 [Debug] [Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery] [{ Id: 6 }] An antiforgery cookie token was reused.
+2017-06-27 16:31:57.505 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine] [{ Id: 1 }] View lookup cache miss for view '"EditCorrelationKeyPartial"' in controller '"Blog"'.
+2017-06-27 16:31:57.506 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.RazorCompilationService] [{ Id: 1 }] Code generation for the Razor file at '"/Views/Blog/EditCorrelationKeyPartial.cshtml"' started.
+2017-06-27 16:31:57.521 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.RazorCompilationService] [{ Id: 2 }] Code generation for the Razor file at '"/Views/Blog/EditCorrelationKeyPartial.cshtml"' completed in 15.3884ms.
+2017-06-27 16:31:57.521 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRoslynCompilationService] [{ Id: 1 }] Compilation of the generated code for the Razor file at '"/Views/Blog/EditCorrelationKeyPartial.cshtml"' started.
+2017-06-27 16:31:59.715 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRoslynCompilationService] [{ Id: 2 }] Compilation of the generated code for the Razor file at '"/Views/Blog/EditCorrelationKeyPartial.cshtml"' completed in 2193.7883ms.
+2017-06-27 16:31:59.730 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine] [{ Id: 1 }] View lookup cache miss for view '"EditSlugPartial"' in controller '"Blog"'.
+2017-06-27 16:31:59.730 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.RazorCompilationService] [{ Id: 1 }] Code generation for the Razor file at '"/Views/Blog/EditSlugPartial.cshtml"' started.
+2017-06-27 16:31:59.747 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.RazorCompilationService] [{ Id: 2 }] Code generation for the Razor file at '"/Views/Blog/EditSlugPartial.cshtml"' completed in 16.0588ms.
+2017-06-27 16:31:59.747 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRoslynCompilationService] [{ Id: 1 }] Compilation of the generated code for the Razor file at '"/Views/Blog/EditSlugPartial.cshtml"' started.
+2017-06-27 16:32:01.791 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRoslynCompilationService] [{ Id: 2 }] Compilation of the generated code for the Razor file at '"/Views/Blog/EditSlugPartial.cshtml"' completed in 2043.6938ms.
+2017-06-27 16:32:01.909 +08:00 [Debug] [Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery] [{ Id: 6 }] An antiforgery cookie token was reused.
+2017-06-27 16:32:01.911 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine] [{ Id: 2 }] View lookup cache hit for view '"_Layout"' in controller '"Blog"'.
+2017-06-27 16:32:01.912 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine] [{ Id: 1 }] View lookup cache miss for view '"_DatePickerCssPartial"' in controller '"Blog"'.
+2017-06-27 16:32:01.913 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.RazorCompilationService] [{ Id: 1 }] Code generation for the Razor file at '"/Views/Shared/_DatePickerCssPartial.cshtml"' started.
+2017-06-27 16:32:01.931 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.RazorCompilationService] [{ Id: 2 }] Code generation for the Razor file at '"/Views/Shared/_DatePickerCssPartial.cshtml"' completed in 18.2976ms.
+2017-06-27 16:32:01.931 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRoslynCompilationService] [{ Id: 1 }] Compilation of the generated code for the Razor file at '"/Views/Shared/_DatePickerCssPartial.cshtml"' started.
+2017-06-27 16:32:03.951 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRoslynCompilationService] [{ Id: 2 }] Compilation of the generated code for the Razor file at '"/Views/Shared/_DatePickerCssPartial.cshtml"' completed in 2020.1181ms.
+2017-06-27 16:32:03.961 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentInvoker] [{ Id: 1 }] Executing view component "cloudscribe.Web.Navigation.NavigationViewComponent" with arguments (["BootstrapTopNavWithDropdowns", "topnav", ""]).
+2017-06-27 16:32:03.962 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentInvoker] [{ Id: 2 }] Executed view component "cloudscribe.Web.Navigation.NavigationViewComponent" in 0.0387ms and returned "Microsoft.AspNetCore.Mvc.ViewComponents.ViewViewComponentResult"
+2017-06-27 16:32:03.962 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine] [{ Id: 2 }] View lookup cache hit for view '"Components/Navigation/BootstrapTopNavWithDropdowns"' in controller '"Blog"'.
+2017-06-27 16:32:03.962 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine] [{ Id: 2 }] View lookup cache hit for view '"_LoginPartial"' in controller '"Blog"'.
+2017-06-27 16:32:03.962 +08:00 [Debug] [Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery] [{ Id: 6 }] An antiforgery cookie token was reused.
+2017-06-27 16:32:03.964 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine] [{ Id: 1 }] View lookup cache miss for view '"_UnobtrusiveValidationScriptsPartial"' in controller '"Blog"'.
+2017-06-27 16:32:03.965 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.RazorCompilationService] [{ Id: 1 }] Code generation for the Razor file at '"/Views/Shared/_UnobtrusiveValidationScriptsPartial.cshtml"' started.
+2017-06-27 16:32:03.980 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.RazorCompilationService] [{ Id: 2 }] Code generation for the Razor file at '"/Views/Shared/_UnobtrusiveValidationScriptsPartial.cshtml"' completed in 14.5809ms.
+2017-06-27 16:32:03.980 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRoslynCompilationService] [{ Id: 1 }] Compilation of the generated code for the Razor file at '"/Views/Shared/_UnobtrusiveValidationScriptsPartial.cshtml"' started.
+2017-06-27 16:32:05.930 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRoslynCompilationService] [{ Id: 2 }] Compilation of the generated code for the Razor file at '"/Views/Shared/_UnobtrusiveValidationScriptsPartial.cshtml"' completed in 1950.048ms.
+2017-06-27 16:32:05.937 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine] [{ Id: 1 }] View lookup cache miss for view '"_UnobtrusiveEditorScriptsPartial"' in controller '"Blog"'.
+2017-06-27 16:32:05.938 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.RazorCompilationService] [{ Id: 1 }] Code generation for the Razor file at '"/Views/Shared/_UnobtrusiveEditorScriptsPartial.cshtml"' started.
+2017-06-27 16:32:05.951 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.RazorCompilationService] [{ Id: 2 }] Code generation for the Razor file at '"/Views/Shared/_UnobtrusiveEditorScriptsPartial.cshtml"' completed in 13.6434ms.
+2017-06-27 16:32:05.955 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRoslynCompilationService] [{ Id: 1 }] Compilation of the generated code for the Razor file at '"/Views/Shared/_UnobtrusiveEditorScriptsPartial.cshtml"' started.
+2017-06-27 16:32:07.900 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRoslynCompilationService] [{ Id: 2 }] Compilation of the generated code for the Razor file at '"/Views/Shared/_UnobtrusiveEditorScriptsPartial.cshtml"' completed in 1944.4266ms.
+2017-06-27 16:32:07.910 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine] [{ Id: 1 }] View lookup cache miss for view '"_DatePickerScriptsPartial"' in controller '"Blog"'.
+2017-06-27 16:32:07.911 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.RazorCompilationService] [{ Id: 1 }] Code generation for the Razor file at '"/Views/Shared/_DatePickerScriptsPartial.cshtml"' started.
+2017-06-27 16:32:07.926 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.RazorCompilationService] [{ Id: 2 }] Code generation for the Razor file at '"/Views/Shared/_DatePickerScriptsPartial.cshtml"' completed in 14.8124ms.
+2017-06-27 16:32:07.926 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRoslynCompilationService] [{ Id: 1 }] Compilation of the generated code for the Razor file at '"/Views/Shared/_DatePickerScriptsPartial.cshtml"' started.
+2017-06-27 16:32:10.016 +08:00 [Debug] [Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRoslynCompilationService] [{ Id: 2 }] Compilation of the generated code for the Razor file at '"/Views/Shared/_DatePickerScriptsPartial.cshtml"' completed in 2090.3158ms.
+2017-06-27 16:32:10.044 +08:00 [Information] [Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker] [{ Id: 2 }] Executed action "cloudscribe.SimpleContent.Web.Mvc.Controllers.BlogController.Edit (cloudscribe.SimpleContent.Web.Mvc)" in 15180.8809ms
+2017-06-27 16:32:10.047 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 9 }] Connection id ""0HL5T6R3JMCK7"" completed keep alive response.
+2017-06-27 16:32:10.047 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 2 }] Request finished in 15193.3008ms 200 text/html; charset=utf-8
+2017-06-27 16:32:10.070 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 1 }] Request starting HTTP/1.1 GET http://localhost:52472/cr/css/bootstrap-datetimepicker.css  
+2017-06-27 16:32:10.072 +08:00 [Debug] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 5 }] The request path "/cr/css/bootstrap-datetimepicker.css" does not match an existing file
+2017-06-27 16:32:10.073 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 1 }] Request starting HTTP/1.1 GET http://localhost:52472/cr/js/jquery.validate.min.js  
+2017-06-27 16:32:10.075 +08:00 [Debug] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 5 }] The request path "/cr/js/jquery.validate.min.js" does not match an existing file
+2017-06-27 16:32:10.076 +08:00 [Information] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 2 }] Sending file. Request path: '"/css/bootstrap-datetimepicker.css"'. Physical path: '"N/A"'
+2017-06-27 16:32:10.076 +08:00 [Information] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 2 }] Sending file. Request path: '"/js/jquery.validate.min.js"'. Physical path: '"N/A"'
+2017-06-27 16:32:10.081 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 9 }] Connection id ""0HL5T6R3JMCK9"" completed keep alive response.
+2017-06-27 16:32:10.081 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 2 }] Request finished in 11.0633ms 200 text/css
+2017-06-27 16:32:10.081 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 9 }] Connection id ""0HL5T6R3JMCK6"" completed keep alive response.
+2017-06-27 16:32:10.081 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 2 }] Request finished in 8.0106ms 200 application/javascript
+2017-06-27 16:32:10.099 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 1 }] Request starting HTTP/1.1 GET http://localhost:52472/cr/js/jquery.validate.unobtrusive.min.js  
+2017-06-27 16:32:10.099 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 1 }] Request starting HTTP/1.1 GET http://localhost:52472/cr/js/moment-with-locales.js  
+2017-06-27 16:32:10.101 +08:00 [Debug] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 5 }] The request path "/cr/js/moment-with-locales.js" does not match an existing file
+2017-06-27 16:32:10.101 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 1 }] Request starting HTTP/1.1 GET http://localhost:52472/cr/js/bootstrap-datetimepicker.js  
+2017-06-27 16:32:10.101 +08:00 [Information] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 2 }] Sending file. Request path: '"/js/moment-with-locales.js"'. Physical path: '"N/A"'
+2017-06-27 16:32:10.102 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 1 }] Request starting HTTP/1.1 GET http://localhost:52472/cr/js/ckeditor461/ckeditor.js  
+2017-06-27 16:32:10.102 +08:00 [Debug] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 5 }] The request path "/cr/js/jquery.validate.unobtrusive.min.js" does not match an existing file
+2017-06-27 16:32:10.102 +08:00 [Debug] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 5 }] The request path "/cr/js/bootstrap-datetimepicker.js" does not match an existing file
+2017-06-27 16:32:10.102 +08:00 [Information] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 2 }] Sending file. Request path: '"/js/bootstrap-datetimepicker.js"'. Physical path: '"N/A"'
+2017-06-27 16:32:10.102 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 1 }] Request starting HTTP/1.1 GET http://localhost:52472/cr/js/ckeditor461/adapters/jquery.js  
+2017-06-27 16:32:10.103 +08:00 [Debug] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 5 }] The request path "/cr/js/ckeditor461/ckeditor.js" does not match an existing file
+2017-06-27 16:32:10.103 +08:00 [Information] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 2 }] Sending file. Request path: '"/js/ckeditor461/ckeditor.js"'. Physical path: '"N/A"'
+2017-06-27 16:32:10.104 +08:00 [Debug] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 5 }] The request path "/cr/js/ckeditor461/adapters/jquery.js" does not match an existing file
+2017-06-27 16:32:10.104 +08:00 [Information] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 2 }] Sending file. Request path: '"/js/ckeditor461/adapters/jquery.js"'. Physical path: '"N/A"'
+2017-06-27 16:32:10.104 +08:00 [Information] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 2 }] Sending file. Request path: '"/js/jquery.validate.unobtrusive.min.js"'. Physical path: '"N/A"'
+2017-06-27 16:32:10.105 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 9 }] Connection id ""0HL5T6R3JMCKA"" completed keep alive response.
+2017-06-27 16:32:10.105 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 2 }] Request finished in 5.7919ms 200 application/javascript
+2017-06-27 16:32:10.106 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 9 }] Connection id ""0HL5T6R3JMCK9"" completed keep alive response.
+2017-06-27 16:32:10.106 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 2 }] Request finished in 4.777ms 200 application/javascript
+2017-06-27 16:32:10.111 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 1 }] Request starting HTTP/1.1 GET http://localhost:52472/cr/js/cloudscribe-ckeditor-unobtrusive.js  
+2017-06-27 16:32:10.116 +08:00 [Debug] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 5 }] The request path "/cr/js/cloudscribe-ckeditor-unobtrusive.js" does not match an existing file
+2017-06-27 16:32:10.116 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 1 }] Request starting HTTP/1.1 GET http://localhost:52472/cr/js/cloudscribe-datepicker-bootstrap-unobtrusive.js  
+2017-06-27 16:32:10.119 +08:00 [Debug] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 5 }] The request path "/cr/js/cloudscribe-datepicker-bootstrap-unobtrusive.js" does not match an existing file
+2017-06-27 16:32:10.119 +08:00 [Information] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 2 }] Sending file. Request path: '"/js/cloudscribe-ckeditor-unobtrusive.js"'. Physical path: '"N/A"'
+2017-06-27 16:32:10.119 +08:00 [Information] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 2 }] Sending file. Request path: '"/js/cloudscribe-datepicker-bootstrap-unobtrusive.js"'. Physical path: '"N/A"'
+2017-06-27 16:32:10.119 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 9 }] Connection id ""0HL5T6R3JMCKA"" completed keep alive response.
+2017-06-27 16:32:10.119 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 2 }] Request finished in 2.8638ms 200 application/javascript
+2017-06-27 16:32:10.119 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 9 }] Connection id ""0HL5T6R3JMCK7"" completed keep alive response.
+2017-06-27 16:32:10.119 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 9 }] Connection id ""0HL5T6R3JMCK8"" completed keep alive response.
+2017-06-27 16:32:10.120 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 2 }] Request finished in 19.2102ms 200 application/javascript
+2017-06-27 16:32:10.120 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 2 }] Request finished in 7.9794ms 200 application/javascript
+2017-06-27 16:32:10.136 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 9 }] Connection id ""0HL5T6R3JMCK5"" completed keep alive response.
+2017-06-27 16:32:10.136 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 2 }] Request finished in 36.8671ms 200 application/javascript
+2017-06-27 16:32:10.141 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 9 }] Connection id ""0HL5T6R3JMCK6"" completed keep alive response.
+2017-06-27 16:32:10.141 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 2 }] Request finished in 39.7886ms 200 application/javascript
+2017-06-27 16:32:10.416 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 1 }] Request starting HTTP/1.1 GET http://localhost:52472/cr/js/cloudscribe-ckeditor-config.min.js?t=GB8C  
+2017-06-27 16:32:10.417 +08:00 [Debug] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 5 }] The request path "/cr/js/cloudscribe-ckeditor-config.min.js" does not match an existing file
+2017-06-27 16:32:10.418 +08:00 [Information] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 2 }] Sending file. Request path: '"/js/cloudscribe-ckeditor-config.min.js"'. Physical path: '"N/A"'
+2017-06-27 16:32:10.418 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 9 }] Connection id ""0HL5T6R3JMCK9"" completed keep alive response.
+2017-06-27 16:32:10.418 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 2 }] Request finished in 1.705ms 200 application/javascript
+2017-06-27 16:32:10.453 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 1 }] Request starting HTTP/1.1 GET http://localhost:52472/cr/js/ckeditor461/skins/moono-lisa/editor.css?t=GB8C  
+2017-06-27 16:32:10.453 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 1 }] Request starting HTTP/1.1 GET http://localhost:52472/cr/js/ckeditor461/lang/en-gb.js?t=GB8C  
+2017-06-27 16:32:10.454 +08:00 [Debug] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 5 }] The request path "/cr/js/ckeditor461/lang/en-gb.js" does not match an existing file
+2017-06-27 16:32:10.454 +08:00 [Debug] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 5 }] The request path "/cr/js/ckeditor461/skins/moono-lisa/editor.css" does not match an existing file
+2017-06-27 16:32:10.455 +08:00 [Information] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 2 }] Sending file. Request path: '"/js/ckeditor461/lang/en-gb.js"'. Physical path: '"N/A"'
+2017-06-27 16:32:10.455 +08:00 [Information] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 2 }] Sending file. Request path: '"/js/ckeditor461/skins/moono-lisa/editor.css"'. Physical path: '"N/A"'
+2017-06-27 16:32:10.455 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 9 }] Connection id ""0HL5T6R3JMCK7"" completed keep alive response.
+2017-06-27 16:32:10.455 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 2 }] Request finished in 1.9666ms 200 application/javascript
+2017-06-27 16:32:10.456 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 9 }] Connection id ""0HL5T6R3JMCKA"" completed keep alive response.
+2017-06-27 16:32:10.456 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 2 }] Request finished in 3.021ms 200 text/css
+2017-06-27 16:32:10.467 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 1 }] Request starting HTTP/1.1 GET http://localhost:52472/cr/js/ckeditor461/styles.js?t=GB8C  
+2017-06-27 16:32:10.468 +08:00 [Debug] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 5 }] The request path "/cr/js/ckeditor461/styles.js" does not match an existing file
+2017-06-27 16:32:10.468 +08:00 [Information] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 2 }] Sending file. Request path: '"/js/ckeditor461/styles.js"'. Physical path: '"N/A"'
+2017-06-27 16:32:10.468 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 9 }] Connection id ""0HL5T6R3JMCK8"" completed keep alive response.
+2017-06-27 16:32:10.468 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 2 }] Request finished in 1.85ms 200 application/javascript
+2017-06-27 16:32:10.477 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 1 }] Request starting HTTP/1.1 GET http://localhost:52472/cr/js/ckeditor461/plugins/oembed/plugin.js?t=GB8C  
+2017-06-27 16:32:10.478 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 1 }] Request starting HTTP/1.1 GET http://localhost:52472/cr/js/ckeditor461/plugins/sourcedialog/plugin.js?t=GB8C  
+2017-06-27 16:32:10.478 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 1 }] Request starting HTTP/1.1 GET http://localhost:52472/cr/js/ckeditor461/plugins/cloudscribe-filedrop/plugin.js?t=GB8C  
+2017-06-27 16:32:10.479 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 1 }] Request starting HTTP/1.1 GET http://localhost:52472/cr/js/ckeditor461/plugins/codesnippet/plugin.js?t=GB8C  
+2017-06-27 16:32:10.479 +08:00 [Debug] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 5 }] The request path "/cr/js/ckeditor461/plugins/oembed/plugin.js" does not match an existing file
+2017-06-27 16:32:10.479 +08:00 [Debug] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 5 }] The request path "/cr/js/ckeditor461/plugins/cloudscribe-filedrop/plugin.js" does not match an existing file
+2017-06-27 16:32:10.479 +08:00 [Debug] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 5 }] The request path "/cr/js/ckeditor461/plugins/sourcedialog/plugin.js" does not match an existing file
+2017-06-27 16:32:10.479 +08:00 [Information] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 2 }] Sending file. Request path: '"/js/ckeditor461/plugins/cloudscribe-filedrop/plugin.js"'. Physical path: '"N/A"'
+2017-06-27 16:32:10.479 +08:00 [Information] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 2 }] Sending file. Request path: '"/js/ckeditor461/plugins/oembed/plugin.js"'. Physical path: '"N/A"'
+2017-06-27 16:32:10.480 +08:00 [Information] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 2 }] Sending file. Request path: '"/js/ckeditor461/plugins/sourcedialog/plugin.js"'. Physical path: '"N/A"'
+2017-06-27 16:32:10.480 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 9 }] Connection id ""0HL5T6R3JMCK6"" completed keep alive response.
+2017-06-27 16:32:10.480 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 2 }] Request finished in 1.8002ms 200 application/javascript
+2017-06-27 16:32:10.480 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 9 }] Connection id ""0HL5T6R3JMCK9"" completed keep alive response.
+2017-06-27 16:32:10.480 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 9 }] Connection id ""0HL5T6R3JMCK5"" completed keep alive response.
+2017-06-27 16:32:10.480 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 2 }] Request finished in 2.4959ms 200 application/javascript
+2017-06-27 16:32:10.480 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 2 }] Request finished in 2.0345ms 200 application/javascript
+2017-06-27 16:32:10.481 +08:00 [Debug] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 5 }] The request path "/cr/js/ckeditor461/plugins/codesnippet/plugin.js" does not match an existing file
+2017-06-27 16:32:10.481 +08:00 [Information] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 2 }] Sending file. Request path: '"/js/ckeditor461/plugins/codesnippet/plugin.js"'. Physical path: '"N/A"'
+2017-06-27 16:32:10.482 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 9 }] Connection id ""0HL5T6R3JMCK7"" completed keep alive response.
+2017-06-27 16:32:10.482 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 2 }] Request finished in 2.9222ms 200 application/javascript
+2017-06-27 16:32:10.492 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 1 }] Request starting HTTP/1.1 GET http://localhost:52472/cr/js/ckeditor461/plugins/widget/plugin.js?t=GB8C  
+2017-06-27 16:32:10.493 +08:00 [Debug] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 5 }] The request path "/cr/js/ckeditor461/plugins/widget/plugin.js" does not match an existing file
+2017-06-27 16:32:10.493 +08:00 [Information] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 2 }] Sending file. Request path: '"/js/ckeditor461/plugins/widget/plugin.js"'. Physical path: '"N/A"'
+2017-06-27 16:32:10.496 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 9 }] Connection id ""0HL5T6R3JMCKA"" completed keep alive response.
+2017-06-27 16:32:10.496 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 2 }] Request finished in 4.1197ms 200 application/javascript
+2017-06-27 16:32:10.512 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 1 }] Request starting HTTP/1.1 GET http://localhost:52472/cr/js/ckeditor461/plugins/widgetselection/plugin.js?t=GB8C  
+2017-06-27 16:32:10.512 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 1 }] Request starting HTTP/1.1 GET http://localhost:52472/cr/js/ckeditor461/plugins/lineutils/plugin.js?t=GB8C  
+2017-06-27 16:32:10.513 +08:00 [Debug] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 5 }] The request path "/cr/js/ckeditor461/plugins/widgetselection/plugin.js" does not match an existing file
+2017-06-27 16:32:10.513 +08:00 [Debug] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 5 }] The request path "/cr/js/ckeditor461/plugins/lineutils/plugin.js" does not match an existing file
+2017-06-27 16:32:10.513 +08:00 [Information] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 2 }] Sending file. Request path: '"/js/ckeditor461/plugins/widgetselection/plugin.js"'. Physical path: '"N/A"'
+2017-06-27 16:32:10.513 +08:00 [Information] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 2 }] Sending file. Request path: '"/js/ckeditor461/plugins/lineutils/plugin.js"'. Physical path: '"N/A"'
+2017-06-27 16:32:10.514 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 9 }] Connection id ""0HL5T6R3JMCK9"" completed keep alive response.
+2017-06-27 16:32:10.514 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 2 }] Request finished in 1.8931ms 200 application/javascript
+2017-06-27 16:32:10.514 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 9 }] Connection id ""0HL5T6R3JMCK8"" completed keep alive response.
+2017-06-27 16:32:10.514 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 2 }] Request finished in 2.1985ms 200 application/javascript
+2017-06-27 16:32:10.532 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 1 }] Request starting HTTP/1.1 GET http://localhost:52472/cr/js/ckeditor461/plugins/codesnippet/lang/en-gb.js?t=GB8C  
+2017-06-27 16:32:10.532 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 1 }] Request starting HTTP/1.1 GET http://localhost:52472/cr/js/ckeditor461/plugins/sourcedialog/lang/en-gb.js?t=GB8C  
+2017-06-27 16:32:10.533 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 1 }] Request starting HTTP/1.1 GET http://localhost:52472/cr/js/ckeditor461/plugins/widget/lang/en-gb.js?t=GB8C  
+2017-06-27 16:32:10.533 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 1 }] Request starting HTTP/1.1 GET http://localhost:52472/cr/js/ckeditor461/plugins/oembed/lang/en.js?t=GB8C  
+2017-06-27 16:32:10.533 +08:00 [Debug] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 5 }] The request path "/cr/js/ckeditor461/plugins/sourcedialog/lang/en-gb.js" does not match an existing file
+2017-06-27 16:32:10.533 +08:00 [Debug] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 5 }] The request path "/cr/js/ckeditor461/plugins/codesnippet/lang/en-gb.js" does not match an existing file
+2017-06-27 16:32:10.534 +08:00 [Information] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 2 }] Sending file. Request path: '"/js/ckeditor461/plugins/codesnippet/lang/en-gb.js"'. Physical path: '"N/A"'
+2017-06-27 16:32:10.534 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 9 }] Connection id ""0HL5T6R3JMCK5"" completed keep alive response.
+2017-06-27 16:32:10.534 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 2 }] Request finished in 1.643ms 200 application/javascript
+2017-06-27 16:32:10.534 +08:00 [Information] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 2 }] Sending file. Request path: '"/js/ckeditor461/plugins/sourcedialog/lang/en-gb.js"'. Physical path: '"N/A"'
+2017-06-27 16:32:10.534 +08:00 [Debug] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 5 }] The request path "/cr/js/ckeditor461/plugins/widget/lang/en-gb.js" does not match an existing file
+2017-06-27 16:32:10.534 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 9 }] Connection id ""0HL5T6R3JMCK6"" completed keep alive response.
+2017-06-27 16:32:10.534 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 2 }] Request finished in 2.0602ms 200 application/javascript
+2017-06-27 16:32:10.534 +08:00 [Information] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 2 }] Sending file. Request path: '"/js/ckeditor461/plugins/widget/lang/en-gb.js"'. Physical path: '"N/A"'
+2017-06-27 16:32:10.534 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 9 }] Connection id ""0HL5T6R3JMCKA"" completed keep alive response.
+2017-06-27 16:32:10.535 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 2 }] Request finished in 1.5324ms 200 application/javascript
+2017-06-27 16:32:10.539 +08:00 [Debug] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 5 }] The request path "/cr/js/ckeditor461/plugins/oembed/lang/en.js" does not match an existing file
+2017-06-27 16:32:10.539 +08:00 [Information] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 2 }] Sending file. Request path: '"/js/ckeditor461/plugins/oembed/lang/en.js"'. Physical path: '"N/A"'
+2017-06-27 16:32:10.540 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 9 }] Connection id ""0HL5T6R3JMCK7"" completed keep alive response.
+2017-06-27 16:32:10.540 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 2 }] Request finished in 6.748ms 200 application/javascript
+2017-06-27 16:32:10.573 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 1 }] Request starting HTTP/1.1 GET http://localhost:52472/cr/js/ckeditor461/plugins/copyformatting/styles/copyformatting.css  
+2017-06-27 16:32:10.574 +08:00 [Debug] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 5 }] The request path "/cr/js/ckeditor461/plugins/copyformatting/styles/copyformatting.css" does not match an existing file
+2017-06-27 16:32:10.575 +08:00 [Information] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 2 }] Sending file. Request path: '"/js/ckeditor461/plugins/copyformatting/styles/copyformatting.css"'. Physical path: '"N/A"'
+2017-06-27 16:32:10.575 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 9 }] Connection id ""0HL5T6R3JMCK9"" completed keep alive response.
+2017-06-27 16:32:10.575 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 2 }] Request finished in 1.9666ms 200 text/css
+2017-06-27 16:32:10.595 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 1 }] Request starting HTTP/1.1 GET http://localhost:52472/cr/js/ckeditor461/plugins/oembed/libs/jquery.oembed.min.js?t=GB8C  
+2017-06-27 16:32:10.596 +08:00 [Debug] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 5 }] The request path "/cr/js/ckeditor461/plugins/oembed/libs/jquery.oembed.min.js" does not match an existing file
+2017-06-27 16:32:10.596 +08:00 [Information] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 2 }] Sending file. Request path: '"/js/ckeditor461/plugins/oembed/libs/jquery.oembed.min.js"'. Physical path: '"N/A"'
+2017-06-27 16:32:10.597 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 9 }] Connection id ""0HL5T6R3JMCK8"" completed keep alive response.
+2017-06-27 16:32:10.598 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 2 }] Request finished in 2.5947ms 200 application/javascript
+2017-06-27 16:32:10.599 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 1 }] Request starting HTTP/1.1 GET http://localhost:52472/cr/js/ckeditor461/plugins/codesnippet/lib/highlight/highlight.pack.js  
+2017-06-27 16:32:10.600 +08:00 [Debug] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 5 }] The request path "/cr/js/ckeditor461/plugins/codesnippet/lib/highlight/highlight.pack.js" does not match an existing file
+2017-06-27 16:32:10.601 +08:00 [Information] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 2 }] Sending file. Request path: '"/js/ckeditor461/plugins/codesnippet/lib/highlight/highlight.pack.js"'. Physical path: '"N/A"'
+2017-06-27 16:32:10.601 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 9 }] Connection id ""0HL5T6R3JMCK5"" completed keep alive response.
+2017-06-27 16:32:10.601 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 2 }] Request finished in 2.7448ms 200 application/javascript
+2017-06-27 16:32:10.647 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 1 }] Request starting HTTP/1.1 GET http://localhost:52472/cr/js/ckeditor461/contents.css?t=GB8C  
+2017-06-27 16:32:10.648 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 1 }] Request starting HTTP/1.1 GET http://localhost:52472/cr/js/ckeditor461/plugins/sourcedialog/icons/hidpi/sourcedialog.png?t=GB8C  
+2017-06-27 16:32:10.648 +08:00 [Debug] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 5 }] The request path "/cr/js/ckeditor461/contents.css" does not match an existing file
+2017-06-27 16:32:10.648 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 1 }] Request starting HTTP/1.1 GET http://localhost:52472/cr/js/ckeditor461/plugins/codesnippet/lib/highlight/styles/default.css  
+2017-06-27 16:32:10.649 +08:00 [Information] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 2 }] Sending file. Request path: '"/js/ckeditor461/contents.css"'. Physical path: '"N/A"'
+2017-06-27 16:32:10.649 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 1 }] Request starting HTTP/1.1 GET http://localhost:52472/cr/js/ckeditor461/skins/moono-lisa/icons_hidpi.png?t=580bcaf  
+2017-06-27 16:32:10.649 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 9 }] Connection id ""0HL5T6R3JMCK6"" completed keep alive response.
+2017-06-27 16:32:10.649 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 2 }] Request finished in 2.2581ms 200 text/css
+2017-06-27 16:32:10.649 +08:00 [Debug] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 5 }] The request path "/cr/js/ckeditor461/plugins/sourcedialog/icons/hidpi/sourcedialog.png" does not match an existing file
+2017-06-27 16:32:10.650 +08:00 [Debug] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 5 }] The request path "/cr/js/ckeditor461/plugins/codesnippet/lib/highlight/styles/default.css" does not match an existing file
+2017-06-27 16:32:10.650 +08:00 [Information] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 2 }] Sending file. Request path: '"/js/ckeditor461/plugins/sourcedialog/icons/hidpi/sourcedialog.png"'. Physical path: '"N/A"'
+2017-06-27 16:32:10.650 +08:00 [Information] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 2 }] Sending file. Request path: '"/js/ckeditor461/plugins/codesnippet/lib/highlight/styles/default.css"'. Physical path: '"N/A"'
+2017-06-27 16:32:10.650 +08:00 [Debug] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 5 }] The request path "/cr/js/ckeditor461/skins/moono-lisa/icons_hidpi.png" does not match an existing file
+2017-06-27 16:32:10.650 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 9 }] Connection id ""0HL5T6R3JMCKA"" completed keep alive response.
+2017-06-27 16:32:10.650 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 9 }] Connection id ""0HL5T6R3JMCK7"" completed keep alive response.
+2017-06-27 16:32:10.650 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 2 }] Request finished in 2.0152ms 200 image/png
+2017-06-27 16:32:10.650 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 2 }] Request finished in 2.0187ms 200 text/css
+2017-06-27 16:32:10.651 +08:00 [Information] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 2 }] Sending file. Request path: '"/js/ckeditor461/skins/moono-lisa/icons_hidpi.png"'. Physical path: '"N/A"'
+2017-06-27 16:32:10.651 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 9 }] Connection id ""0HL5T6R3JMCK9"" completed keep alive response.
+2017-06-27 16:32:10.651 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 2 }] Request finished in 2.4098ms 200 image/png
+2017-06-27 16:32:10.658 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 1 }] Request starting HTTP/1.1 GET http://localhost:52472/cr/js/ckeditor461/plugins/codesnippet/icons/hidpi/codesnippet.png?t=GB8C  
+2017-06-27 16:32:10.658 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 1 }] Request starting HTTP/1.1 GET http://localhost:52472/cr/js/ckeditor461/plugins/oembed/icons/hidpi/oembed.png?t=GB8C  
+2017-06-27 16:32:10.659 +08:00 [Debug] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 5 }] The request path "/cr/js/ckeditor461/plugins/oembed/icons/hidpi/oembed.png" does not match an existing file
+2017-06-27 16:32:10.659 +08:00 [Debug] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 5 }] The request path "/cr/js/ckeditor461/plugins/codesnippet/icons/hidpi/codesnippet.png" does not match an existing file
+2017-06-27 16:32:10.660 +08:00 [Information] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 2 }] Sending file. Request path: '"/js/ckeditor461/plugins/oembed/icons/hidpi/oembed.png"'. Physical path: '"N/A"'
+2017-06-27 16:32:10.660 +08:00 [Information] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 2 }] Sending file. Request path: '"/js/ckeditor461/plugins/codesnippet/icons/hidpi/codesnippet.png"'. Physical path: '"N/A"'
+2017-06-27 16:32:10.660 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 9 }] Connection id ""0HL5T6R3JMCK5"" completed keep alive response.
+2017-06-27 16:32:10.660 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 9 }] Connection id ""0HL5T6R3JMCK8"" completed keep alive response.
+2017-06-27 16:32:10.660 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 2 }] Request finished in 2.0005ms 200 image/png
+2017-06-27 16:32:10.660 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 2 }] Request finished in 2.2708ms 200 image/png
+2017-06-27 16:32:12.050 +08:00 [Debug] [SaasKit.Multitenancy.MemoryCacheTenantResolver] [] Disposing TenantContext:"1cb6d21e-839d-4cc0-bf4c-3f8acfd7b728" instance with key ""localhost"".
+2017-06-27 16:32:12.050 +08:00 [Debug] [SaasKit.Multitenancy.MemoryCacheTenantResolver] [] Disposing TenantContext:"1cb6d21e-839d-4cc0-bf4c-3f8acfd7b728" instance with key ""localhost:50000"".
+2017-06-27 16:32:12.050 +08:00 [Debug] [SaasKit.Multitenancy.MemoryCacheTenantResolver] [] Disposing TenantContext:"1cb6d21e-839d-4cc0-bf4c-3f8acfd7b728" instance with key ""tenant1.local:50000"".
+2017-06-27 16:32:12.050 +08:00 [Debug] [SaasKit.Multitenancy.MemoryCacheTenantResolver] [] Disposing TenantContext:"1cb6d21e-839d-4cc0-bf4c-3f8acfd7b728" instance with key ""localhost:52472"".
+2017-06-27 16:32:12.050 +08:00 [Debug] [SaasKit.Multitenancy.MemoryCacheTenantResolver] [] Disposing TenantContext:"1cb6d21e-839d-4cc0-bf4c-3f8acfd7b728" instance with key ""pandene-001-site1.ftempurl.com"".
+2017-06-27 16:32:12.050 +08:00 [Debug] [SaasKit.Multitenancy.MemoryCacheTenantResolver] [] Disposing TenantContext:"1cb6d21e-839d-4cc0-bf4c-3f8acfd7b728" instance with key ""wanderlustcoder.com"".
+2017-06-27 16:32:12.050 +08:00 [Debug] [SaasKit.Multitenancy.MemoryCacheTenantResolver] [] Disposing TenantContext:"1cb6d21e-839d-4cc0-bf4c-3f8acfd7b728" instance with key ""www.wanderlustcoder.com"".
+2017-06-27 16:33:13.095 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 6 }] Connection id ""0HL5T6R3JMCK7"" received FIN.
+2017-06-27 16:33:13.095 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 6 }] Connection id ""0HL5T6R3JMCK8"" received FIN.
+2017-06-27 16:33:13.095 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 1 }] Connection id ""0HL5T6R3JMCKB"" started.
+2017-06-27 16:33:13.096 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 1 }] Connection id ""0HL5T6R3JMCKC"" started.
+2017-06-27 16:33:13.095 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 6 }] Connection id ""0HL5T6R3JMCK9"" received FIN.
+2017-06-27 16:33:13.095 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 6 }] Connection id ""0HL5T6R3JMCK6"" received FIN.
+2017-06-27 16:33:13.136 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 6 }] Connection id ""0HL5T6R3JMCKA"" received FIN.
+2017-06-27 16:33:13.136 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 6 }] Connection id ""0HL5T6R3JMCK5"" received FIN.
+2017-06-27 16:33:13.136 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 1 }] Request starting HTTP/1.1 GET http://localhost:52472/cr/js/ckeditor461/plugins/sourcedialog/dialogs/sourcedialog.js?t=GB8C  
+2017-06-27 16:33:13.136 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 1 }] Request starting HTTP/1.1 GET http://localhost:52472/cr/js/ckeditor461/skins/moono-lisa/dialog.css?t=GB8C  
+2017-06-27 16:33:13.141 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 10 }] Connection id ""0HL5T6R3JMCK9"" disconnecting.
+2017-06-27 16:33:13.145 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 10 }] Connection id ""0HL5T6R3JMCK8"" disconnecting.
+2017-06-27 16:33:13.145 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 10 }] Connection id ""0HL5T6R3JMCK7"" disconnecting.
+2017-06-27 16:33:13.148 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 10 }] Connection id ""0HL5T6R3JMCK6"" disconnecting.
+2017-06-27 16:33:13.151 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 10 }] Connection id ""0HL5T6R3JMCKA"" disconnecting.
+2017-06-27 16:33:13.151 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 10 }] Connection id ""0HL5T6R3JMCK5"" disconnecting.
+2017-06-27 16:33:13.151 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 7 }] Connection id ""0HL5T6R3JMCK7"" sending FIN.
+2017-06-27 16:33:13.151 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 7 }] Connection id ""0HL5T6R3JMCK6"" sending FIN.
+2017-06-27 16:33:13.151 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 7 }] Connection id ""0HL5T6R3JMCK9"" sending FIN.
+2017-06-27 16:33:13.152 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 7 }] Connection id ""0HL5T6R3JMCK8"" sending FIN.
+2017-06-27 16:33:13.152 +08:00 [Debug] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 5 }] The request path "/cr/js/ckeditor461/plugins/sourcedialog/dialogs/sourcedialog.js" does not match an existing file
+2017-06-27 16:33:13.152 +08:00 [Debug] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 5 }] The request path "/cr/js/ckeditor461/skins/moono-lisa/dialog.css" does not match an existing file
+2017-06-27 16:33:13.152 +08:00 [Information] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 2 }] Sending file. Request path: '"/js/ckeditor461/plugins/sourcedialog/dialogs/sourcedialog.js"'. Physical path: '"N/A"'
+2017-06-27 16:33:13.153 +08:00 [Information] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 2 }] Sending file. Request path: '"/js/ckeditor461/skins/moono-lisa/dialog.css"'. Physical path: '"N/A"'
+2017-06-27 16:33:13.153 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 9 }] Connection id ""0HL5T6R3JMCKB"" completed keep alive response.
+2017-06-27 16:33:13.153 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 7 }] Connection id ""0HL5T6R3JMCK5"" sending FIN.
+2017-06-27 16:33:13.153 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 2 }] Request finished in 17.2408ms 200 application/javascript
+2017-06-27 16:33:13.153 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 7 }] Connection id ""0HL5T6R3JMCKA"" sending FIN.
+2017-06-27 16:33:13.153 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 9 }] Connection id ""0HL5T6R3JMCKC"" completed keep alive response.
+2017-06-27 16:33:13.153 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 2 }] Request finished in 17.7185ms 200 text/css
+2017-06-27 16:33:13.158 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 8 }] Connection id ""0HL5T6R3JMCK5"" sent FIN with status "0".
+2017-06-27 16:33:13.158 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 8 }] Connection id ""0HL5T6R3JMCK7"" sent FIN with status "0".
+2017-06-27 16:33:13.158 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 8 }] Connection id ""0HL5T6R3JMCKA"" sent FIN with status "0".
+2017-06-27 16:33:13.158 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 8 }] Connection id ""0HL5T6R3JMCK8"" sent FIN with status "0".
+2017-06-27 16:33:13.161 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 2 }] Connection id ""0HL5T6R3JMCKA"" stopped.
+2017-06-27 16:33:13.161 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 2 }] Connection id ""0HL5T6R3JMCK7"" stopped.
+2017-06-27 16:33:13.161 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 8 }] Connection id ""0HL5T6R3JMCK6"" sent FIN with status "0".
+2017-06-27 16:33:13.161 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 2 }] Connection id ""0HL5T6R3JMCK5"" stopped.
+2017-06-27 16:33:13.161 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 2 }] Connection id ""0HL5T6R3JMCK8"" stopped.
+2017-06-27 16:33:13.161 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 2 }] Connection id ""0HL5T6R3JMCK6"" stopped.
+2017-06-27 16:33:13.161 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 8 }] Connection id ""0HL5T6R3JMCK9"" sent FIN with status "0".
+2017-06-27 16:33:13.161 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 2 }] Connection id ""0HL5T6R3JMCK9"" stopped.
+2017-06-27 16:33:13.187 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 1 }] Request starting HTTP/1.1 GET http://localhost:52472/cr/js/ckeditor461/skins/moono-lisa/images/hidpi/close.png  
+2017-06-27 16:33:13.188 +08:00 [Debug] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 5 }] The request path "/cr/js/ckeditor461/skins/moono-lisa/images/hidpi/close.png" does not match an existing file
+2017-06-27 16:33:13.188 +08:00 [Information] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 2 }] Sending file. Request path: '"/js/ckeditor461/skins/moono-lisa/images/hidpi/close.png"'. Physical path: '"N/A"'
+2017-06-27 16:33:13.189 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 9 }] Connection id ""0HL5T6R3JMCKB"" completed keep alive response.
+2017-06-27 16:33:13.189 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 2 }] Request finished in 2.1783ms 200 image/png
+2017-06-27 16:33:17.737 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 1 }] Request starting HTTP/1.1 GET http://localhost:52472/blog/edit/images/viewLocations.png  
+2017-06-27 16:33:17.737 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 1 }] Request starting HTTP/1.1 GET http://localhost:52472/blog/edit/images/viewLocationsResult.png  
+2017-06-27 16:33:17.738 +08:00 [Debug] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 5 }] The request path "/blog/edit/images/viewLocations.png" does not match an existing file
+2017-06-27 16:33:17.738 +08:00 [Debug] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 3 }] The request path "" does not match the path filter
+2017-06-27 16:33:17.738 +08:00 [Debug] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 5 }] The request path "/blog/edit/images/viewLocationsResult.png" does not match an existing file
+2017-06-27 16:33:17.738 +08:00 [Debug] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] [{ Id: 3 }] The request path "" does not match the path filter
+2017-06-27 16:33:17.739 +08:00 [Debug] [SaasKit.Multitenancy.Internal.TenantResolutionMiddleware] [] Resolving TenantContext using "CachingSiteResolver".
+2017-06-27 16:33:17.739 +08:00 [Debug] [SaasKit.Multitenancy.Internal.TenantResolutionMiddleware] [] Resolving TenantContext using "CachingSiteResolver".
+2017-06-27 16:33:17.739 +08:00 [Debug] [SaasKit.Multitenancy.MemoryCacheTenantResolver] [] TenantContext not present in cache with key ""localhost:52472"". Attempting to resolve.
+2017-06-27 16:33:17.739 +08:00 [Debug] [SaasKit.Multitenancy.MemoryCacheTenantResolver] [] TenantContext not present in cache with key ""localhost:52472"". Attempting to resolve.
+2017-06-27 16:33:17.739 +08:00 [Debug] [SaasKit.Multitenancy.MemoryCacheTenantResolver] [] TenantContext:"473079d5-f91d-4d4e-b781-e59e53d5faac" resolved. Caching with keys "["localhost:50000", "localhost:52472", "tenant1.local:50000", "pandene-001-site1.ftempurl.com", "wanderlustcoder.com", "www.wanderlustcoder.com", "localhost"]".
+2017-06-27 16:33:17.739 +08:00 [Debug] [SaasKit.Multitenancy.Internal.TenantResolutionMiddleware] [] TenantContext Resolved. Adding to HttpContext.
+2017-06-27 16:33:17.739 +08:00 [Debug] [SaasKit.Multitenancy.MemoryCacheTenantResolver] [] TenantContext:"dc558e32-0085-4ff5-a0c2-e8077faa8515" resolved. Caching with keys "["localhost:50000", "localhost:52472", "tenant1.local:50000", "pandene-001-site1.ftempurl.com", "wanderlustcoder.com", "www.wanderlustcoder.com", "localhost"]".
+2017-06-27 16:33:17.739 +08:00 [Debug] [SaasKit.Multitenancy.MemoryCacheTenantResolver] [] Disposing TenantContext:"473079d5-f91d-4d4e-b781-e59e53d5faac" instance with key ""localhost:52472"".
+2017-06-27 16:33:17.739 +08:00 [Debug] [SaasKit.Multitenancy.MemoryCacheTenantResolver] [] Disposing TenantContext:"473079d5-f91d-4d4e-b781-e59e53d5faac" instance with key ""tenant1.local:50000"".
+2017-06-27 16:33:17.739 +08:00 [Debug] [SaasKit.Multitenancy.MemoryCacheTenantResolver] [] Disposing TenantContext:"473079d5-f91d-4d4e-b781-e59e53d5faac" instance with key ""wanderlustcoder.com"".
+2017-06-27 16:33:17.739 +08:00 [Debug] [SaasKit.Multitenancy.MemoryCacheTenantResolver] [] Disposing TenantContext:"473079d5-f91d-4d4e-b781-e59e53d5faac" instance with key ""pandene-001-site1.ftempurl.com"".
+2017-06-27 16:33:17.739 +08:00 [Information] [Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware] [{ Id: 3 }] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "eo4coding".
+2017-06-27 16:33:17.739 +08:00 [Debug] [SaasKit.Multitenancy.MemoryCacheTenantResolver] [] Disposing TenantContext:"473079d5-f91d-4d4e-b781-e59e53d5faac" instance with key ""localhost"".
+2017-06-27 16:33:17.739 +08:00 [Debug] [SaasKit.Multitenancy.MemoryCacheTenantResolver] [] Disposing TenantContext:"473079d5-f91d-4d4e-b781-e59e53d5faac" instance with key ""localhost:50000"".
+2017-06-27 16:33:17.739 +08:00 [Debug] [SaasKit.Multitenancy.MemoryCacheTenantResolver] [] Disposing TenantContext:"473079d5-f91d-4d4e-b781-e59e53d5faac" instance with key ""www.wanderlustcoder.com"".
+2017-06-27 16:33:17.740 +08:00 [Debug] [Microsoft.AspNetCore.Routing.RouteConstraintMatcher] [{ Id: 1 }] Route value '"edit"' with key '"year"' did not match the constraint '"Microsoft.AspNetCore.Routing.Constraints.RegexRouteConstraint"'.
+2017-06-27 16:33:17.740 +08:00 [Debug] [SaasKit.Multitenancy.Internal.TenantResolutionMiddleware] [] TenantContext Resolved. Adding to HttpContext.
+2017-06-27 16:33:17.740 +08:00 [Information] [Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware] [{ Id: 3 }] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "eo4coding".
+2017-06-27 16:33:17.740 +08:00 [Debug] [Microsoft.AspNetCore.Routing.RouteConstraintMatcher] [{ Id: 1 }] Route value '"edit"' with key '"year"' did not match the constraint '"Microsoft.AspNetCore.Routing.Constraints.RegexRouteConstraint"'.
+2017-06-27 16:33:17.741 +08:00 [Debug] [Microsoft.AspNetCore.Builder.RouterMiddleware] [{ Id: 1 }] Request did not match any routes.
+2017-06-27 16:33:17.741 +08:00 [Debug] [Microsoft.AspNetCore.Builder.RouterMiddleware] [{ Id: 1 }] Request did not match any routes.
+2017-06-27 16:33:17.749 +08:00 [Debug] [SaasKit.Multitenancy.Internal.TenantResolutionMiddleware] [] Resolving TenantContext using "CachingSiteResolver".
+2017-06-27 16:33:17.749 +08:00 [Debug] [SaasKit.Multitenancy.MemoryCacheTenantResolver] [] TenantContext:"dc558e32-0085-4ff5-a0c2-e8077faa8515" retrieved from cache with key ""localhost:52472"".
+2017-06-27 16:33:17.749 +08:00 [Debug] [SaasKit.Multitenancy.Internal.TenantResolutionMiddleware] [] TenantContext Resolved. Adding to HttpContext.
+2017-06-27 16:33:17.749 +08:00 [Debug] [SaasKit.Multitenancy.Internal.TenantResolutionMiddleware] [] Resolving TenantContext using "CachingSiteResolver".
+2017-06-27 16:33:17.749 +08:00 [Debug] [SaasKit.Multitenancy.MemoryCacheTenantResolver] [] TenantContext:"dc558e32-0085-4ff5-a0c2-e8077faa8515" retrieved from cache with key ""localhost:52472"".
+2017-06-27 16:33:17.749 +08:00 [Debug] [SaasKit.Multitenancy.Internal.TenantResolutionMiddleware] [] TenantContext Resolved. Adding to HttpContext.
+2017-06-27 16:33:17.749 +08:00 [Information] [Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware] [{ Id: 3 }] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "eo4coding".
+2017-06-27 16:33:17.750 +08:00 [Information] [Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware] [{ Id: 3 }] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "eo4coding".
+2017-06-27 16:33:17.750 +08:00 [Debug] [Microsoft.AspNetCore.Builder.RouterMiddleware] [{ Id: 1 }] Request did not match any routes.
+2017-06-27 16:33:17.750 +08:00 [Debug] [Microsoft.AspNetCore.Builder.RouterMiddleware] [{ Id: 1 }] Request did not match any routes.
+2017-06-27 16:33:17.750 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 9 }] Connection id ""0HL5T6R3JMCKB"" completed keep alive response.
+2017-06-27 16:33:17.750 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 9 }] Connection id ""0HL5T6R3JMCKC"" completed keep alive response.
+2017-06-27 16:33:17.750 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 2 }] Request finished in 13.4012ms 404 
+2017-06-27 16:33:17.750 +08:00 [Information] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [{ Id: 2 }] Request finished in 13.4846ms 404 
+2017-06-27 16:35:18.120 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 10 }] Connection id ""0HL5T6R3JMCKB"" disconnecting.
+2017-06-27 16:35:18.120 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 7 }] Connection id ""0HL5T6R3JMCKB"" sending FIN.
+2017-06-27 16:35:18.121 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 8 }] Connection id ""0HL5T6R3JMCKB"" sent FIN with status "0".
+2017-06-27 16:35:18.121 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 2 }] Connection id ""0HL5T6R3JMCKB"" stopped.
+2017-06-27 16:35:18.234 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 10 }] Connection id ""0HL5T6R3JMCKC"" disconnecting.
+2017-06-27 16:35:18.235 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 7 }] Connection id ""0HL5T6R3JMCKC"" sending FIN.
+2017-06-27 16:35:18.237 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 8 }] Connection id ""0HL5T6R3JMCKC"" sent FIN with status "0".
+2017-06-27 16:35:18.237 +08:00 [Debug] [Microsoft.AspNetCore.Server.Kestrel] [{ Id: 2 }] Connection id ""0HL5T6R3JMCKC"" stopped.
