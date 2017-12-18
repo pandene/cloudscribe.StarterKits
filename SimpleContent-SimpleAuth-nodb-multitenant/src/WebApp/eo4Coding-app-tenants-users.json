@@ -29,9 +29,9 @@
             "SmtpPreferredEncoding": "",
             "Users": [
               {
-                "UserName": "admin",
+                "UserName": "ebeno",
                 "FYI-Comment": "this hash is a hash of the word admin, to create your own password hash, set EnablePasswordHasherUi as true, and visit /Login/HashPassword",
-                "Password": "AQAAAAEAACcQAAAAEKyu1zRJBNHJUw4r1mJwxgHfvofBmIAZSiG8X1O8dmdBFiQT0183/oqeoo0qGHv/Hw==",
+                "Password": "AQAAAAEAACcQAAAAEO4NlJy3f2sEib5iw2S12p/jTtSLzIhmPI7gxRLUK12aCoJFKDGTRMDF60aNKFWU7A==",
                 "PasswordIsHashed": "true",
                 "Claims": [
                   {

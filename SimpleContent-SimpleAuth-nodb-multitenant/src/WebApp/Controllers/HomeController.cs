@@ -11,12 +11,13 @@ using Microsoft.AspNetCore.Authorization;
 using cloudscribe.Web.Common.Extensions;
 using cloudscribe.Messaging.Email;
 using cloudscribe.Web.Common.Razor;
+using SaasKit.Multitenancy;
 
 namespace WebApp.Controllers
 {
     public class HomeController : Controller
     {
-        public HomeController(ILogger<HomeController> logger, IProjectService projectService, IProjectEmailService emailService, ViewRenderer viewRenderer)
+        public HomeController(ILogger<HomeController> logger, IProjectService projectService, IProjectEmailService emailService, ViewRenderer viewRenderer,SiteSettings tenant, ITenantResolver<SiteSettings> tenantResolver,TenantContext<SiteSettings> tc,ITenant<SiteSettings> it)
         {
             log = logger;
             this.projectService = projectService;
