@@ -256,11 +256,10 @@ paket-files/
 **/nodb_storage/projects/default/logitem/**
 **/appsettings.local.overrides.json
 **/appsettings.dev.json
+**/appsettings.Development.json
 **/wwwroot/lib/**
 **/bower_components/**
 cloudscribe-core-nodb/src/WebApp/nodb_storage/**
 **/userlocation/**
 
 **/nodb_storage/projects/**/userlocation/**
-
-logs/
