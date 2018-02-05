@@ -1,0 +1,18 @@
+﻿@using  Eo4Coding.Trade.AutoTrader.Runners;
+@model CollectionRunner;
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+<ul>
+    @foreach (var item in Model.Runners)
+    {
+        var latestValue = item.LatestValue;
+    <li>
+        @item
+    </li>
+    }
+</ul>
+

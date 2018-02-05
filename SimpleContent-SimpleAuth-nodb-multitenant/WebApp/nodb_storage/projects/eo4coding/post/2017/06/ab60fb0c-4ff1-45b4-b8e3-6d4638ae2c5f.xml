@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-16"?>
+<post>
+  <title>Multi tenancy .net core</title>
+  <slug>multi-tenancy-net-core</slug>
+  <correlationkey />
+  <author>Eben Olivier</author>
+  <pubDate>2017-06-28T17:00:00.0000000Z</pubDate>
+  <lastModified>2017-06-28T16:22:17.7442944Z</lastModified>
+  <excerpt>Starting with Multi Tenancy asp.net core,  getting to know the basics</excerpt>
+  <content>&lt;h1 style="font-style: italic"&gt;Why multi tenancy&lt;/h1&gt;
+
+&lt;p&gt;So my idea I've have been playing with is to have one site which I can use for different things that I am busy with right now, the fist been development which has always been a passion but somehow got neglected over the years been a dad and more involved with management at work. But the latter has changed, no more management but still full time dad and traveller. This has open up some time to get back in the development side of things and my first priority is to get started on blogging about development. I have been busy with and new ideas such as multi tenancy which is exactly what I've planned since I have multiple unrelated sites, one for travelling and one for technical/development.&lt;/p&gt;
+
+&lt;p&gt;Starting with idea I came across a couple of concepts, such as dot net blog engine which I had a quick look at, but decided that is not really what I want. Only after starting to look at implementing themes and multiple sites did I came across a blog done by &lt;a href="http://benfoster.io/"&gt;Ben foster&lt;/a&gt; about &lt;a href="http://benfoster.io/blog/saaskit-multi-tenancy-made-easy"&gt;Introducing SaasKit - Multi-tenancy made easy&lt;/a&gt;. This was exactly what I was looking for and although the posts are 2 years old and some of the information doesn't relate exactly back to the code any more which told me this is still active work and a good thing.&lt;/p&gt;
+
+&lt;p&gt;Although Ben’s blog gave me a good starting point things has changed though and I will quickly give my view on it.&lt;/p&gt;
+
+&lt;h2&gt;saaskit.Multitenancy&lt;/h2&gt;
+
+&lt;p&gt;The saaskit package provides the functionality to identify the tenant for you, you still need to do the configuration and the setup on how to identify your tenant and who your tenants will be, this can be any implementation of your liking, but the one used in the samples(starterkits) is persisted in the app settings of your web application and loaded through &lt;span class="inline-code"&gt;MultiTenancyOptions &lt;/span&gt; with property &lt;span class="inline-code"&gt; &lt;span class="Modifier"&gt;public &lt;/span&gt;List&amp;lt;SiteSettings&amp;gt;Tenants{get; set;}&lt;/span&gt;. This is loaded via &lt;span class="inline-code"&gt;services.Configure&amp;lt;MultiTenancyOptions&amp;gt;(Configuration.GetSection(&lt;span class="String"&gt;"MultiTenancy"&lt;/span&gt;));&lt;/span&gt; in startup.cs&lt;br /&gt;
+The persisted json for this can be found in the app-tenants-users.json file that is added to the configuration&lt;/p&gt;
+
+&lt;h2&gt;Resolving the tenant&lt;/h2&gt;
+
+&lt;p&gt;Now that the list of tenants are sorted saaskit.Multitenancy need to resolve the tenant. This is also done in startup.cs with &lt;span class="inline-code"&gt;services.AddMultitenancy&amp;lt;SiteSettings, CachingSiteResolver&amp;gt;();&lt;/span&gt; passing the &lt;span class="inline-code"&gt;SiteSettings&lt;/span&gt; type containing our tenant information and the &lt;span class="inline-code"&gt;ITenantResolver&lt;/span&gt; implementation that will actually resolve the tenant. In this case the implementation that will be used is &lt;span class="inline-code"&gt;&lt;span class="Modifier"&gt;public&lt;/span&gt; &lt;span class="ReferenceType"&gt;class&lt;/span&gt; CachingSiteResolver : MemoryCacheTenantResolver&amp;lt;SiteSettings&amp;gt;&lt;/span&gt; which extend the &lt;span class="inline-code"&gt;MemCacheTenantResolver&lt;/span&gt; provided by saaskit.Multitenancy.&lt;br /&gt;
+&lt;span class="inline-code"&gt;services.AddMultitenancy&amp;lt;SiteSettings, CachingSiteResolver&amp;gt;();&lt;/span&gt; is an extension method in saaskit.Multitenancy that will register our CachingSiteResolver into the DI. Apart from the CachingSiteResolver it will also rewgister our SiteSettings which makes it easy to use it where needed.&lt;/p&gt;
+
+&lt;pre class="code"&gt;
+&lt;span class="Modifier"&gt;public&lt;/span&gt; &lt;span class="Modifier"&gt;static&lt;/span&gt; IServiceCollection AddMultitenancy&amp;lt;TTenant, TResolver&amp;gt;(&lt;span class="Keyword"&gt;this&lt;/span&gt; IServiceCollection services) 
+           &lt;span class="Linq"&gt;where&lt;/span&gt; TResolver : &lt;span class="ReferenceType"&gt;class&lt;/span&gt;, ITenantResolver&amp;lt;TTenant&amp;gt; 
+           &lt;span class="Linq"&gt;where&lt;/span&gt; TTenant : &lt;span class="ReferenceType"&gt;class&lt;/span&gt; 
+       { 
+           Ensure.Argument.NotNull(services, nameof(services)); 
+ 
+           services.AddScoped&amp;lt;ITenantResolver&amp;lt;TTenant&amp;gt;, TResolver&amp;gt;(); 
+ 
+           &lt;span class="InlineComment"&gt;// No longer registered by default as of ASP.NET Core RC2&lt;/span&gt; 
+           services.TryAddSingleton&amp;lt;IHttpContextAccessor, HttpContextAccessor&amp;gt;(); 
+ 
+           &lt;span class="InlineComment"&gt;// Make Tenant and TenantContext injectable&lt;/span&gt; 
+           services.AddScoped&amp;lt;TenantContext&amp;lt;TTenant&amp;gt;&amp;gt;( 
+               prov =&amp;gt; 
+               prov.GetService&amp;lt;IHttpContextAccessor&amp;gt;()?.HttpContext?.GetTenantContext&amp;lt;TTenant&amp;gt;() 
+               ); 
+           services.AddScoped(prov =&amp;gt; prov.GetService&amp;lt;TenantContext&amp;lt;TTenant&amp;gt;&amp;gt;()?.Tenant); 
+ 
+           &lt;span class="InlineComment"&gt;// Make ITenant injectable for handling null injection, similar to IOptions&lt;/span&gt; 
+           services.AddScoped&amp;lt;ITenant&amp;lt;TTenant&amp;gt;&amp;gt;(prov =&amp;gt; &lt;span class="Keyword"&gt;new&lt;/span&gt; TenantWrapper&amp;lt;TTenant&amp;gt;(prov.GetService&amp;lt;TTenant&amp;gt;())); 
+ 
+           &lt;span class="InlineComment"&gt;// Ensure caching is available for caching resolvers&lt;/span&gt; 
+           &lt;span class="Linq"&gt;var&lt;/span&gt; resolverType = &lt;span class="Keyword"&gt;typeof&lt;/span&gt;(TResolver); 
+           &lt;span class="Statement"&gt;if&lt;/span&gt; (&lt;span class="Keyword"&gt;typeof&lt;/span&gt;(MemoryCacheTenantResolver&amp;lt;TTenant&amp;gt;).IsAssignableFrom(resolverType)) 
+           { 
+               services.AddMemoryCache(); 
+           } 
+ 
+           &lt;span class="Statement"&gt;return&lt;/span&gt; services; 
+       }
+&lt;/pre&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;Now that the that our Tenant are registered with the DI we need to add the middleware in the request pipeline which will resolve the Tenant on each request and add it to our HTTPContect. This is done in the configure method in startup.cs with the this statement &lt;span class="inline-code"&gt; app.UseMultitenancy&amp;lt;SiteSettings&amp;gt;();&lt;/span&gt; an extension method on the &lt;span class="inline-code"&gt;IApplicationBuilder&lt;/span&gt; that will add the &lt;span class="inline-code"&gt;TenantResolutionMiddleware&amp;lt;TTenant&amp;gt;&lt;/span&gt; middleware. The Invoke method of &lt;span class="inline-code"&gt;TenantResolverMiddleWare&lt;/span&gt; gets an instance of the CachingSiteResolver class to get the &lt;span class="inline-code"&gt;TenantContext&amp;lt;TTenant&amp;gt;&lt;/span&gt; which will be added to the &lt;span class="inline-code"&gt;HTTPContext.Items&lt;/span&gt; collection.&lt;/p&gt;
+
+&lt;pre class="code"&gt;
+&lt;span class="Modifier"&gt;public&lt;/span&gt; &lt;span class="Modifier"&gt;static&lt;/span&gt; &lt;span class="ReferenceType"&gt;class&lt;/span&gt; MultitenancyHttpContextExtensions 
+{ 
+    &lt;span class="Modifier"&gt;private&lt;/span&gt; &lt;span class="Modifier"&gt;const&lt;/span&gt; &lt;span class="ReferenceType"&gt;string&lt;/span&gt; TenantContextKey = &lt;span class="String"&gt;"saaskit.TenantContext"&lt;/span&gt;; 
+ 
+ 
+    &lt;span class="Modifier"&gt;public&lt;/span&gt; &lt;span class="Modifier"&gt;static&lt;/span&gt; &lt;span class="ValueType"&gt;void&lt;/span&gt; SetTenantContext&amp;lt;TTenant&amp;gt;(&lt;span class="Keyword"&gt;this&lt;/span&gt; HttpContext context, TenantContext&amp;lt;TTenant&amp;gt; tenantContext) 
+    { 
+        context.Items[TenantContextKey] = tenantContext; 
+    }
+&lt;/pre&gt;
+
+&lt;p&gt;&lt;br /&gt;
+So anywhere down the request pipeline the Tenant can be retrieved from the items dictionary in the HTTPContext and is exactly what GetTenant extension method does. When you need to get hold of your tenant you can just call the GetTenant extention method on HTTContext.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;pre class="code"&gt;
+&lt;span class="Modifier"&gt;public&lt;/span&gt; &lt;span class="Modifier"&gt;static&lt;/span&gt; TTenant GetTenant&amp;lt;TTenant&amp;gt;(&lt;span class="Keyword"&gt;this&lt;/span&gt; HttpContext context)
+
+{
+
+    &lt;span class="Linq"&gt;var&lt;/span&gt; tenantContext = GetTenantContext&amp;lt;TTenant&amp;gt;(context);
+
+    &lt;span class="Statement"&gt;if&lt;/span&gt; (tenantContext != &lt;span class="Keyword"&gt;null&lt;/span&gt;)
+
+    {
+         &lt;span class="Statement"&gt;return&lt;/span&gt; tenantContext.Tenant;
+
+    }
+    &lt;span class="Statement"&gt;return&lt;/span&gt; &lt;span class="Modifier"&gt;default&lt;/span&gt;(TTenant);
+
+}
+&lt;/pre&gt;
+
+&lt;p&gt;&lt;br /&gt;
+As mentioned before, the Tenant get be retrieved using DI.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2&gt;Identifying the tenant&lt;/h2&gt;
+
+&lt;p&gt;The CachingSiteResolver is your own implementation on how to resolve the tenant by using the current HTTPContext’s Request property to get the Host(localhost,www.domain.com,localhost:50000) value and compare it against the list of tenants that was injected via &lt;span class="inline-code"&gt;IOptions&amp;lt;MultiTenancyOptions&amp;gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;pre class="code"&gt;
+&lt;span class="Modifier"&gt;protected&lt;/span&gt; &lt;span class="Modifier"&gt;override&lt;/span&gt; Task&amp;lt;TenantContext&amp;lt;SiteSettings&amp;gt;&amp;gt; ResolveAsync(HttpContext context)
+{
+    TenantContext&amp;lt;SiteSettings&amp;gt; tenantContext = &lt;span class="Keyword"&gt;null&lt;/span&gt;
+    &lt;span class="Linq"&gt;var&lt;/span&gt; tenant = tenants.FirstOrDefault(t =&amp;gt;
+    t.Hostnames.Any(h =&amp;gt; h.Equals(context.Request.Host.Value.ToLower())));&lt;/pre&gt;
+
+&lt;p&gt;&lt;br /&gt;
+This code can be easily modified to identify the tenant by other means, such as port only, or perhaps a domain alias or even a querystring parameter.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2&gt;Tenant Themes and customising views per tenant&lt;/h2&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;In the StarterKit example the default theme is persisted through the SiteSittings class in the configuration.&lt;/p&gt;
+
+&lt;pre class="code"&gt;
+&lt;span class="Modifier"&gt;public&lt;/span&gt; &lt;span class="ReferenceType"&gt;class&lt;/span&gt; SiteSettings
+{
+    &lt;span class="Modifier"&gt;public&lt;/span&gt;&lt;span class="ReferenceType"&gt;string&lt;/span&gt;[] Hostnames { get; set;}
+    &lt;span class="Modifier"&gt;public&lt;/span&gt; &lt;span class="ReferenceType"&gt;string&lt;/span&gt;Them{get; set; }
+&lt;/pre&gt;
+
+&lt;p&gt;This is an snippet of the two properties that is of importance in resolving tenants and the theme to use. Hostnames are used to resolve the tenant as per previous section. The theme is the name that will be used when looking for the theme under the Themes directory in the project.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="" src="images/ThemesDirectory.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;To get MVC Razor to use the right Theme and view a nice feature is used called ViewLocationExpanders. This gives you the opportunity to tell the RazorEngine where else to look for views. Once again this is your own implementation and the one the starterkits come with is implemented in the &lt;span class="inline-code"&gt;SiteViewLocationExpander&lt;/span&gt; class. The extract below shows the locations getting added to the default search locations.&lt;/p&gt;
+
+&lt;pre class="code"&gt;
+IEnumerable&amp;lt;string&amp;gt; themeLocations = new[]
+        {
+        $"/Themes/{theme}/{{1}}/{{0}}.cshtml",
+        $"/Themes/{theme}/Shared/{{0}}.cshtml"
+        }
+        &lt;/pre&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;pre class="code"&gt;
+yield return location.Replace("{0}", $"{{0}}_{tenant}");
+        &lt;/pre&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;The extract shows that it will first add paths to your theme location then the last line will add your project name in the location as well. In this sample my Theme name and project name is the same (eo4coding). Below is the input for the default razor search locations and the result with all the added locations, the search will start at the first location and enumerate through the list until a view is find. So in this example it will first try and find the view under your theme with your project name added to the view name and will eventually end at the default paths at the end.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="viewLocations" class="auto-style1" src="/images/viewLocations.png" style="width: 320px; height: 70px;" /&gt;&lt;br /&gt;
+Original viewLocations&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="viewLocationsResult" src="/images/viewLocationsResult.png" style="width: 449px; height: 150px;" /&gt;&lt;br /&gt;
+Result viewLocations&lt;/p&gt;
+
+&lt;p&gt;What is a bit confusing in this example is that my Theme name and Project Name is the same(eo4coding) but the viewname get the added _'ProjectName' appended to the name in this example eo4coding. As an example if it is looking for Index.cshtml it will first look under your theme location for Index_eo4coding.cshtml.&lt;/p&gt;
+
+&lt;p&gt;Once again this is your own implementation of how to find views specific for your tenant and can easily be changed to do it in a different way. I would prefer to save tenant specific views in a unique directory for each tenant instead of under the theme directory which can easily be done.&lt;/p&gt;
+
+&lt;h3&gt;Get going&lt;/h3&gt;
+
+&lt;p&gt;The best place to get started with saaskit is on github &lt;a href="https://github.com/saaskit/saaskit"&gt;saaskit&lt;/a&gt; which has links and examples on how to do get going. I used the &lt;a href="https://github.com/joeaudette/cloudscribe.StarterKits"&gt;Starterkits&lt;/a&gt; from github which has much more that multi tenancy but it has a good workable example to get you going with multitenancy&lt;/p&gt;
+</content>
+  <ispublished>true</ispublished>
+  <categories>
+    <category>multi tenancy</category>
+    <category>aspnet core</category>
+    <category>dynamic themes</category>
+  </categories>
+  <comments></comments>
+</post>

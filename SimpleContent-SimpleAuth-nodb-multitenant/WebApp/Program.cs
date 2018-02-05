@@ -22,13 +22,18 @@ namespace WebApp
                 .UseConfiguration(new ConfigurationBuilder()
                     .SetBasePath(Directory.GetCurrentDirectory())
                     .AddJsonFile("hosting.json", optional: true)
+                  .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+                  //  .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true, reloadOnChange: true);
                     .Build()
                  )
                  .ConfigureAppConfiguration((builderContext, config) =>
                  {
                      config.AddJsonFile("app-tenants-users.json", optional: true, reloadOnChange: true)
                         .AddJsonFile("app-content-project-settings.json", optional: true, reloadOnChange: true)
-                         ;
+                        .AddJsonFile("eo4coding-app-tenants-users.json")
+                        .AddJsonFile("eo4coding-app-content-project-settings.json");
+
+                     ;
                  })
                 .UseStartup<Startup>()
                 .Build();

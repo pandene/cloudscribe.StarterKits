@@ -9,7 +9,7 @@ namespace WebApp
             this.tenant = tenant;
 
             authSettings = new SimpleAuthSettings();
-            authSettings.AuthenticationScheme = "application";
+            authSettings.AuthenticationScheme = tenant.AuthenticationScheme;
             authSettings.RecaptchaPrivateKey = tenant.RecaptchaPrivateKey;
             authSettings.RecaptchaPublicKey = tenant.RecaptchaPublicKey;
             authSettings.EnablePasswordHasherUi = tenant.EnablePasswordHasherUi;

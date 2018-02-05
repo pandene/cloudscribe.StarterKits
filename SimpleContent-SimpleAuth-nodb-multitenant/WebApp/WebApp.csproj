@@ -5,21 +5,25 @@
     <UserSecretsId>aspnet-WebApp-58636384-3D48-4D4C-A394-22BFC514C008</UserSecretsId>
 	<PreserveCompilationContext>true</PreserveCompilationContext>
     <MvcRazorCompileOnPublish>false</MvcRazorCompileOnPublish>
+    <MvcRazorExcludeRefAssembliesFromPublish>false</MvcRazorExcludeRefAssembliesFromPublish>
   </PropertyGroup>
   
   <ItemGroup>
-    <None Update="wwwroot\**\*;navigation.xml">
+    <None Update="wwwroot\**\*;nodb_storage\**\*;Themes\**\*;Areas\**\Views;navigation.xml">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </None>
     <Content Remove="nodb_storage\**\*" CopyToPublishDirectory="Never" />
-    <Content Include="nodb_storage\**\*" CopyToPublishDirectory="Never" />
+    <Content Include="nodb_storage\**\*" CopyToPublishDirectory="PreserveNewest" />
+    <Content Include="logs\**\*" CopyToPublishDirectory="Never" />
 
     <Content Remove="wwwroot\lib\**\*" CopyToPublishDirectory="Never" />
     <Content Remove="bower.json" CopyToPublishDirectory="Never" />
     <Content Remove="bundleconfig.json" CopyToPublishDirectory="Never" />
     <Content Remove="appsettings.Development.json" CopyToPublishDirectory="Never" />
 
-    <Content Include="wwwroot\lib\**\*" CopyToPublishDirectory="Never" />
+    <Content Include="wwwroot\lib\**\*" CopyToPublishDirectory="PreserveNewest" />
+
+    <Compile Remove="Controllers\LoginController.cs" />
     <Content Include="bower.json" CopyToPublishDirectory="Never" />
     <Content Include="bundleconfig.json" CopyToPublishDirectory="Never" />
     <Content Include="appsettings.Development.json" CopyToPublishDirectory="Never" />
@@ -29,19 +33,44 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="cloudscribe.SimpleContent.Web.Mvc" Version="2.0.*" />
-    <PackageReference Include="cloudscribe.SimpleContent.Storage.NoDb" Version="2.0.*" />
+    <PackageReference Include="cloudscribe.SimpleContent.Web.Mvc" Version="2.0.20" />
+    <PackageReference Include="cloudscribe.SimpleContent.Storage.NoDb" Version="2.0.8" />
     <PackageReference Include="cloudscribe.SimpleContent.Security.SimpleAuth" Version="2.0.*" />
-    <PackageReference Include="cloudscribe.SimpleContent.MetaWeblog" Version="2.0.*" />
-    <PackageReference Include="cloudscribe.SimpleContent.Syndication" Version="2.0.*" />
+    <PackageReference Include="cloudscribe.SimpleContent.MetaWeblog" Version="2.0.1" />
+    <PackageReference Include="cloudscribe.SimpleContent.Syndication" Version="2.0.2" />
     <PackageReference Include="cloudscribe.Syndication.Web" Version="2.0.*" />
-    <PackageReference Include="SaasKit.Multitenancy" Version="1.1.4" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.2" />
+  <!--  <PackageReference Include="SaasKit.Multitenancy" Version="1.1.4" /> -->
   
-    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0-*" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.*" />
+  
+    <PackageReference Include="serilog" Version="2.6.0" />
+  
+    <PackageReference Include="serilog.Extensions.Logging" Version="2.0.2" />
+  
+    <PackageReference Include="serilog.Settings.Configuration" Version="2.4.0" />
+  
+    <PackageReference Include="serilog.Sinks.File" Version="4.0.0" />
+  
+    <PackageReference Include="serilog.Sinks.RollingFile" Version="3.3.0" />
+  
+  <!--
+      <PackageReference Include="serilog" Version="2.4.0" />
+    <PackageReference Include="Serilog.Extensions.Logging" Version="1.4.0" />
+    <PackageReference Include="Serilog.Settings.Configuration" Version="2.4.0" />
+    <PackageReference Include="Serilog.Sinks.File" Version="3.2.0" />
+    <PackageReference Include="Serilog.Sinks.RollingFile" Version="3.3.0" />
+-->
+    
   </ItemGroup>
 
   <ItemGroup>
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\dotnetcore\MultiTenancy\saaskit\Saaskit.MultiTenancy2\Saaskit.MultiTenancy2.csproj" />
+    <ProjectReference Include="..\..\..\..\..\EO4Coding\Trade\Eo4Coding.Trade.AutoTrader\Eo4Coding.Trade.AutoTrader.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,0 +1,26 @@
+﻿@using  Eo4Coding.Trade.AutoTrader.Runners;
+@using EO4Coding.Trade.Lib;
+@model CollectionRunner;
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+Startup : @Model.StartUp Uptime : @Model.StartUp.DateTime.TimeSinceNow()<br />
+Exception :@Model.RunnerException;
+
+
+@if (Model.RunnerException == null)
+{
+    <ul>
+        @foreach (var item in Model.Runners)
+        {
+            var latestValue = item.LatestValue;
+            <li>
+                @item
+            </li>
+        }
+    </ul>
+}

@@ -13,6 +13,11 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using WebApp.Integration;
 using cloudscribe.Web.Navigation.Caching;
+using Microsoft.Extensions.Logging;
+using Serilog;
+using WebApp.RouteConstraints;
+using Eo4Coding.Trade.AutoTrader.Runners;
+using System.Threading;
 
 namespace WebApp
 {
@@ -52,6 +57,8 @@ namespace WebApp
 
             });
 
+            services.AddRunners();
+
             services.AddSingleton<IOptionsMonitor<CookieAuthenticationOptions>, SiteCookieAuthenticationOptions>();
 
             services.AddScoped<cloudscribe.SimpleContent.Models.IProjectQueries, cloudscribe.SimpleContent.Storage.NoDb.ConfigProjectQueries>();
@@ -73,6 +80,7 @@ namespace WebApp
             services.AddMetaWeblogForSimpleContent(Configuration.GetSection("MetaWeblogApiOptions"));
             services.AddSimpleContentRssSyndiction();
             services.AddCloudscribeFileManager(Configuration);
+            services.AddSession();
 
             // Add MVC services to the services container.
 
@@ -114,10 +122,36 @@ namespace WebApp
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(
             IApplicationBuilder app, 
-            IHostingEnvironment env,
-            IOptions<cloudscribe.Web.SimpleAuth.Models.SimpleAuthSettings> authSettingsAccessor
+            IHostingEnvironment env, 
+            ILoggerFactory loggerFactory,
+            IOptions<cloudscribe.Web.SimpleAuth.Models.SimpleAuthSettings> authSettingsAccessor,
+            CollectionRunner runner,
+            IApplicationLifetime applicationLifetime
+
             )
         {
+            //loggerFactory.AddConsole(Configuration.GetSection("Logging"));
+            //loggerFactory.AddDebug((category,loglever)=>category.ToLower().Contains("route"));
+
+            Log.Logger = new LoggerConfiguration()
+//.MinimumLevel.Debug()
+//.WriteTo.RollingFile(Path.Combine(env.ContentRootPath, "C:\\logs\\log-{Date}.txt"),
+//                outputTemplate: "{Timestamp:yyyy-MM-dd HH:mm:ss.fff zzz} [{Level}] [{SourceContext}] [{EventId}] {Message}{NewLine}{Exception}")
+.ReadFrom.Configuration(Configuration)
+.CreateLogger();
+            loggerFactory.AddSerilog();
+
+
+
+            app.Map("/RequestInfo", bldr => {
+                bldr.Run(async context =>
+                {
+                    await context.Response.WriteAsync(
+                        //$"< !doctype html >\r\n<html>< head></head><body>< style>span {{position: absolute;left: 150px}}</style >< p >< h1 > Request properties </ h1 >< ul >< li > Path :< span > {context.Request.Path} </ span ></ li >< li > Path Base:< span > {context.Request.PathBase} </ span ></ li >< li > Method :< span > {context.Request.Method} </ span ></ li >< li > query :< span > {context.Request.Query} </ span ></ li >< li > Host :< span > @Model.Request.Host.Value </ span ></ li >< li > Port :< span > @Model.Request.Host.Port </ span ></ li ></ ul > </ p ></body></html>");
+                        $"Request properties \r\nPath :{context.Request.Path.Value}\r\nPath Base:{context.Request.PathBase} \r\nMethod :{context.Request.Method}\r\nQuery :{context.Request.QueryString}\r\nHost Full :{context.Request.Host.Value}\r\nHost :{context.Request.Host.Host}\r\nPort :{context.Request.Host.Port} ");
+
+                });
+            });
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -127,35 +161,42 @@ namespace WebApp
             {
                 app.UseExceptionHandler("/Home/Error");
             }
+            // add inline demo middleware
+            //app.Use(async (context, next) =>
+            //{
+            //    //context.Request.
+            //    //await context.Response.WriteAsync("Hello from inline demo middleware...");
+            //    // invoke the next middleware
+            //    await next.Invoke();
+            //});
+
+            runner.CreateStatic(CancellationToken.None);
 
             app.UseStaticFiles();
             app.UseCloudscribeCommonStaticFiles();
 
             // custom 404 and error page - this preserves the status code (ie 404)
             app.UseStatusCodePagesWithReExecute("/Home/Error/{0}");
-
+            app.UseSession();
             app.UseMultitenancy<SiteSettings>();
 
             app.UseAuthentication();
-
+            
             app.UseMvc(routes =>
             {
                 routes.AddSimpleContentStaticResourceRoutes();
                 routes.AddCloudscribeFileManagerRoutes();
-                routes.AddStandardRoutesForSimpleContent();
-                // the Pages feature routes by default would take over as the defualt route
-                // if you only want the blog then comment out the line above and use:
-                //routes.AddBlogRoutesForSimpleContent();
-                // then you will see the standard home controller becomes the home page
-                // instead of the pages feature - to use that you would also want to edit
-                // the navigation.xml file to remove the pages feature treebuilder reference 
-                // and add the other actions of the home controller into the menu
-
-
-                // this route is needed for the SimpleAuth /Login
+                //routes.AddStandardRoutesForSimpleContent();
+                routes.AddRoutes();
+                routes.MapRoute(
+                    name: "login",
+                    template: "pr-login/{action}",
+                    defaults: new { controller = "Login",action="Index"});
                 routes.MapRoute(
                     name: "def",
-                    template: "{controller}/{action}"
+                    template: "{controller}/{action}",
+                    defaults:new { controller = "Home", action = "Index" },
+                    constraints:new { login = new DefaultLoginRouteConstraint("Login") }
                     );
 
                 // this route is not really the default route unless you change the above

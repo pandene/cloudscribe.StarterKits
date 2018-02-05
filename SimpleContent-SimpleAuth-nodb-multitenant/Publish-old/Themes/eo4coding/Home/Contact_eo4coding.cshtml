@@ -1,0 +1,60 @@
+﻿@using WebApp.Models
+@model ContactViewModel
+
+@{
+    ViewData["Title"] = "Contact Eben Olivier";
+}
+
+<h1>Contact Eben Olivier</h1>
+<p><img alt="" src="~/media/images/20170522_181140-ws.jpg" style="height:309px; width:550px" /></p>
+
+<p>Having fun and work where ever I go, feel free to contact me. Just bear in mind I sometimes need to finish my beer before I reply</p>
+
+
+<form id="contactform" role="form" asp-antiforgery="true" class="form-horizontal" data-contact-path="AjaxPostContact">
+    <fieldset>
+        <div class="form-group row">
+            <label for="contactname" class="control-label col-sm-2">Name</label>
+            <div class="col-sm-7">
+                <input id="contactname" class="form-control" type="text" placeholder="Name" required />
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="contactemail" class="control-label col-sm-2">Email</label>
+            <div class="col-sm-7">
+                <input id="contactemail" class="form-control" type="email" placeholder="Email" required />
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="commenturl" class="control-label col-sm-2">Website</label>
+            <div class="col-sm-7">
+                <input id="contacturl" class="form-control" type="url" placeholder="Website URL" />
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="contactcontent" class="control-label col-sm-2">Text (no HTML allowed)</label>
+            <div class="col-sm-10">
+                <textarea id="contactcontent" class="form-control" rows="4" placeholder="Comment" required></textarea>
+            </div>
+        </div>
+        
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <div class="g-recaptcha" data-sitekey="@Model.ProjectSettings.RecaptchaPublicKey"></div>
+                    @Html.ValidationMessage("recaptchaerror", new { @class = "text-danger" }) 
+                </div>
+            </div>
+            
+        <div class="form-group row">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button class="btn btn-primary">Contact Me</button>
+                <span id="status" class="alert" role="status" aria-live="polite"></span>
+            </div>
+        </div>
+    </fieldset>
+</form>
+@section scripts{
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src="~/js/contact.js?1"></script>
+
+}

@@ -1,0 +1,160 @@
+﻿{
+  "MultiTenancy": {
+        "Tenants": [
+          {
+            "UniqueKey": "eo4coding",
+            "SiteName": "Eben Olivier's dev page",
+            "Hostnames": [
+              "localhost:50000",
+              "localhost:6139",
+              "localhost:6140",
+              "localhost:52472",
+              "tenant1.local:50000",
+              "pandene-001-site1.ftempurl.com",
+              "wanderlustcoder.com",
+              "www.wanderlustcoder.com",
+              "localhost"
+            ],
+            "Theme": "eo4coding",
+            "ContentProjectId": "eo4coding",
+            "EnablePasswordHasherUi": "true",
+            "RecaptchaPublicKey": "6Lf-nSQUAAAAAIjZYOpPswpSKY-Tz8jJL0NP5Rtr",
+            "RecaptchaPrivateKey": "6Lf-nSQUAAAAADYHX0l5-7oly9LgiSYHnsZLlYgx",
+            "AuthenticationScheme": "eo4coding",
+            
+            "SmtpServer": "mail.wanderlustcoder.com",
+            "SmtpPort": "25",
+            "SmtpUser": "eben@wanderlustcoder.com",
+            "SmtpPassword": "e4eben@wl",
+            "SmtpRequiresAuth": "true",
+            "SmtpUseSsl": "true",
+            "SmtpPreferredEncoding": "",
+            "Users": [
+              {
+                "UserName": "ebeno",
+                "FYI-Comment": "this hash is a hash of the word admin, to create your own password hash, set EnablePasswordHasherUi as true, and visit /Login/HashPassword",
+                "Password": "AQAAAAEAACcQAAAAEEkDGUpF6J+9Ium5hYMHNUG1ca0hc/xZ73bZTHixFVXCq7QrujcYy3GpOztDUXcGwg==",
+                "PasswordIsHashed": "true",
+                "Claims": [
+                  {
+                    "ClaimType": "ProjectId",
+                    "ClaimValue": "eo4coding"
+                  },
+                  {
+                    "ClaimType": "ContentEditor",
+                    "ClaimValue": "eo4coding"
+                  },
+                  {
+                    "ClaimType": "DisplayName",
+                    "ClaimValue": "Eben Olivier"
+                  },
+                  {
+                    "ClaimType": "Email",
+                    "ClaimValue": "oliviereben@gmail.com"
+                  },
+                  {
+                    "ClaimType": "Role",
+                    "ClaimValue": "Admins"
+                  }
+
+                ]
+              },
+              {
+                "UserName": "member",
+                "Password": "member",
+                "PasswordIsHashed": "false",
+                "Claims": [
+                  {
+                    "ClaimType": "DisplayName",
+                    "ClaimValue": "Mr Awesome"
+                  },
+                  {
+                    "ClaimType": "Email",
+                    "ClaimValue": "melanie@wanderlustcoder.com"
+                  },
+                  {
+                    "ClaimType": "Role",
+                    "ClaimValue": "Members"
+                  }
+
+                ]
+              }
+            ]
+          },
+          {
+            "UniqueKey": "eo4Trading",
+            "SiteName": "Ebens Trading Tests",
+            "Hostnames": [
+              "localhost:50000",
+              "localhost:6139",
+              "localhost:6140",
+              "localhost:52472",
+              "tenant1.local:50000",
+              "pandene-001-site1.ftempurl.com",
+              "wanderlustcoder.com",
+              "www.wanderlustcoder.com",
+              "localhost"
+            ],
+            "Theme": "eo4coding",
+            "ContentProjectId": "eo4Trading",
+            "EnablePasswordHasherUi": "true",
+            "RecaptchaPublicKey": "",
+            "RecaptchaPrivateKey": "",
+            "AuthenticationScheme": "eo4Coding",
+            "Users": [
+              {
+                "UserName": "ebeno",
+                "FYI-Comment": "this hash is a hash of the word admin, to create your own password hash, set EnablePasswordHasherUi as true, and visit /Login/HashPassword",
+                "Password": "AQAAAAEAACcQAAAAEEkDGUpF6J+9Ium5hYMHNUG1ca0hc/xZ73bZTHixFVXCq7QrujcYy3GpOztDUXcGwg==",
+                "PasswordIsHashed": "true",
+                "Claims": [
+                  {
+                    "ClaimType": "ProjectId",
+                    "ClaimValue": "eo4coding"
+                  },
+                  {
+                    "ClaimType": "ContentEditor",
+                    "ClaimValue": "eo4coding"
+                  },
+                  {
+                    "ClaimType": "DisplayName",
+                    "ClaimValue": "Eben Olivier"
+                  },
+                  {
+                    "ClaimType": "Email",
+                    "ClaimValue": "oliviereben@gmail.com"
+                  },
+                  {
+                    "ClaimType": "Role",
+                    "ClaimValue": "Admins"
+                  }
+
+                ]
+              },
+              {
+                "UserName": "member",
+                "Password": "member",
+                "PasswordIsHashed": "false",
+                "Claims": [
+                  {
+                    "ClaimType": "DisplayName",
+                    "ClaimValue": "Mr Awesome"
+                  },
+                  {
+                    "ClaimType": "Email",
+                    "ClaimValue": "melanie@wanderlustcoder.com"
+                  },
+                  {
+                    "ClaimType": "Role",
+                    "ClaimValue": "Members"
+                  }
+
+                ]
+              }
+            ]
+          }
+        ]
+    }
+
+  
+}
